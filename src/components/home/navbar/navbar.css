@@ -1,3 +1,6 @@
+html body {
+  overflow-x: hidden;
+}
 /* General Styles */
 .navbar {
   margin: 0;
@@ -30,6 +33,7 @@ header {
   align-items: center;
   padding: 0 2rem;
   z-index: 10;
+  width: 100vw;
 }
 
 .multiverse-text:hover {
@@ -87,6 +91,9 @@ header {
 .navbar .links {
   display: flex;
   gap: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  
 }
 
 .navbar .toggle_btn {
@@ -173,6 +180,11 @@ header {
     left: 2rem;
     width: unset;
   }
+
+  .dropdown_menu.open {
+    height: 27rem;
+  }
+
 }
 
 /* Glitch Effect */

@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import "./navbar.css";
 
 function Navbar() {
@@ -24,14 +24,14 @@ function Navbar() {
 
       <title>Anantya</title>
       <header>
-       
+
 
         <div className="navbar">
           <div className="logo">
             <a href="#">
               <span className="multiverse-text">Anantya</span>
               {/* <span className="branches"> */}
-                {/* <span className="branch"></span>
+              {/* <span className="branch"></span>
                 <span className="branch"></span>
                 <span className="branch"></span> */}
               {/* </span> */}
@@ -45,14 +45,14 @@ function Navbar() {
             <li><a href="#" data-text="Team" className="glitch">Team</a></li>
           </ul>
           <div className="action_btn"><div className="galaxy-button">
-    <button className="space-button">
-      <span className="backdrop" />
-      <span className="galaxy" />
-      <label className="text">Register</label>
-    </button>
-    <div className="bodydrop" />
-  </div>
-  </div>
+            <button className="space-button">
+              <span className="backdrop" />
+              <span className="galaxy" />
+              <label className="text">Register</label>
+            </button>
+            <div className="bodydrop" />
+          </div>
+          </div>
           {/* <a href="#" className="action_btn">Register</a> */}
           <div className="toggle_btn" onClick={toggleMenu}>
             <i className={isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
@@ -66,14 +66,16 @@ function Navbar() {
           <li><a href="#" data-text="Calender" className="glitch">Calender</a></li>
           <li><a href="#" data-text="Team" className="glitch">Team</a></li>
           <div className="action_btn"><div className="galaxy-button">
-    <button className="space-button">
-      <span className="backdrop" />
-      <span className="galaxy" />
-      <label className="text" data-text="Register">Register</label>
-    </button>
-    <div className="bodydrop" />
-  </div></div>
-          
+            <button className="space-button">
+              <span className="backdrop" />
+              <span className="galaxy" />
+              <label className="text" data-text="Register">Register</label>
+            </button>
+            <div className="bodydrop" />
+          </div>
+
+          </div>
+
         </div>
       </header>
     </>
