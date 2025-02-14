@@ -91,7 +91,7 @@
 
 // export const HoverEffect = ({ items, className }) => {
 //     let [hoveredIndex, setHoveredIndex] = useState(null);
-  
+
 //     return (
 //       <div className="flex justify-center items-center min-h-screen w-full">
 //         <div
@@ -121,7 +121,7 @@
 //                   />
 //                 )}
 //               </AnimatePresence>
-  
+
 //               <Card image={item.image} title={item.title} description={item.description} />
 //             </a>
 //           ))}
@@ -143,7 +143,7 @@
 //             <img src={image} alt={title || "Card Image"} className="w-full h-full object-cover rounded-xl" />
 //           </div>
 //         )}
-  
+
 //         {/* Content */}
 //         <div className="relative z-50 p-4">
 //           <CardTitle>{title}</CardTitle>
@@ -193,13 +193,21 @@ export const HoverEffect = ({ items, className }) => {
           >
             <AnimatePresence>
               {hoveredIndex === idx && (
+                // <motion.span
+                //   className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                //   layoutId="hoverBackground"
+                //   initial={{ opacity: 0 }}
+                //   animate={{ opacity: 1, transition: { duration: 0.15 } }}
+                //   exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
+                // />
                 <motion.span
-                  className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                  className="absolute inset-0 h-full w-full bg-red-500 block rounded-3xl z-10" // Set red background with high z-index
                   layoutId="hoverBackground"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { duration: 0.15 } }}
                   exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
                 />
+
               )}
             </AnimatePresence>
 
@@ -215,7 +223,7 @@ export const Card = ({ className, image, title }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-amber-300 relative z-20 shadow-lg flex flex-col items-center gap-20 min-w-[300px] min-h-[350px]", // Ensured min size
+        "rounded-2xl p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-amber-300 relative z-20 shadow-lg flex flex-col items-center gap-10 min-w-[300px] min-h-[350px]", // Ensured min size
         className
       )}
     >
