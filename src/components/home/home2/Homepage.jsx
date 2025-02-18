@@ -429,7 +429,7 @@ const Homepage = () => {
                 </div>
                 <div className="glow"></div>
                 <video className="intro-video" autoPlay muted loop>
-                  <source src="../../../../public/homebg.mp4" type="video/mp4" />
+                  <source src="../../../../homebg.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

@@ -61,22 +61,6 @@
     overflow: visible;
   
   }
-  
-
-  .glow {
-    transform: translateY(74px);
-    height: 0;
-    width: 0;
-    border-left: 170px solid transparent;
-    border-right: 170px solid transparent;
-    border-top: 200px solid #07CAF3;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    z-index: 25;
-}
-
-  
 
   .content-container {
     position: relative;
@@ -126,15 +110,22 @@
     gap: 40px;
     /* justify-content: space-between; */
     margin-top: 30px;
+    
 }
 .sub_timer{
     width: 120px;
-    background: rgba(255, 255, 255, 0.19);
+    background: rgba(0, 0, 0, 0.19);
     backdrop-filter: blur(20px);
     border-radius: 20px;
     overflow: hidden;
 }
 .digit{
+    border: 0.095rem solid #fff;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: none;
     color: #fff;
     font-weight: lighter;
     font-size: 70px;
@@ -142,8 +133,12 @@
     padding: 0.5rem 0;
 }
 .digit_name{
-    color: #000;
-    background: #fff;
+    /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(241, 241, 241, 0.663);
+box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.37);
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
     text-align: center;
     padding: 0.6rem 0;
     font-size: 20px;
@@ -158,7 +153,7 @@
 
   .sub_timer {
       width: 80px; /* Decrease box size */
-      border-radius: 15px; /* Adjust border radius */
+      border-radius: 10px; /* Adjust border radius */
   }
 
   .digit {
