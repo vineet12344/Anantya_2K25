@@ -78,6 +78,7 @@ function EventPage() {
 
       {/* Modal Structure */}
       <div id="eventModal" className="modal">
+            <p id="modalDetails">Event details go here...</p>
       </div>
     </div>
   );
