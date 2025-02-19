@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 import logo from "../../../../public/alogo.jpg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -42,7 +44,7 @@ function Navbar() {
           </div>
           <ul className="links">
             <li><a href="#" data-text="Home" className="glitch">Home</a></li>
-            <li><a href="#" data-text="Events" className="glitch">Events</a></li>
+            <li><a href="#" data-text="Events" className="glitch" onClick={() => navigate("/events")}>Events</a></li>
             <li><a href="#" data-text="Gallery" className="glitch">Gallery</a></li>
             <li><a href="#" data-text="Calender" className="glitch">Calender</a></li>
             <li><a href="#" data-text="Team" className="glitch">Team</a></li>
