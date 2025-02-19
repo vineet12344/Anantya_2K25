@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./navbar.css";
+import logo from "../../../../public/alogo.jpg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ function Navbar() {
       <link rel="stylesheet" href="style.css" />
       <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        href="ht  tps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
@@ -28,8 +29,10 @@ function Navbar() {
 
         <div className="navbar">
           <div className="logo">
-            <a href="#">
-              <span className="multiverse-text">Anantya</span>
+            <a href="">
+            <div className="nav-logo">
+            </div>
+              <span className="logo-text">Anantya</span>
               {/* <span className="branches"> */}
               {/* <span className="branch"></span>
                 <span className="branch"></span>

@@ -322,33 +322,41 @@
 
 // export default Homepage;
 
-import {useState, useEffect, useRef } from "react";
+// LATEST CODE
+
+
+import {useState,useLayoutEffect, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Homepage.css";
 import "./GlitchText.css";
-import "./Slider.css"; // Added CSS for slider
+import "./Slider.css";
+// import footer from "../footer/footer";
+import 'https://unpkg.com/shader-doodle';
+
+
 const Homepage = () => {
   const sectionsRef = useRef([]);
-  const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+  const [currentSlide, setCurrentSlide] = useState(1);
+    const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
 
   const images = [
     "../../../../public/bg_3.jpg",
     "../../../../public/bg_3.jpg",
     "../../../../public/bg_3.jpg",
-    "../../../../public/bg_3.jpg",
-    "../../../../public/bg_3.jpg",
     "../../../../public/bg_3.jpg"
+    
   ];
 
   const texts = [
     "",
     "Happening This March In collaboration with",
-    "Get ready to experience multiple events across the Multiverse",
-    "Anantya 2025 \u00A0 collaboration with ACM, ACM-W, OWASP, CSI, ISTE",
+    "Glimpses of Anantya 2024",
+    "Sposnsored By",
     "Bug Bounties",
     "Threat Analysis"
   ];
+
 
 
 
@@ -404,13 +412,65 @@ const Homepage = () => {
     });
   }, []);
 
+  useLayoutEffect(() => { // Use useLayoutEffect
+    let imageNo = 1;
+
+    const displayimg = (n, setSlide) => {  // Add setSlide parameter
+      const images = document.getElementsByClassName("image");
+      const dots = document.getElementsByClassName("dot");
+
+      if (n > images.length) {
+        imageNo = 1;
+      }
+      if (n < 1) {
+        imageNo = images.length;
+      }
+
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+      }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      images[imageNo - 1].style.display = "block";
+      dots[imageNo - 1].className += " active";
+
+      setSlide(imageNo); // Use the passed setSlide function
+    };
+
+    displayimg(imageNo, setCurrentSlide); // Pass setCurrentSlide
+
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const dotElements = document.querySelectorAll('.dot');
+
+    if (prevButton && nextButton && dotElements) {
+      prevButton.addEventListener('click', () => displayimg(imageNo -= 1, setCurrentSlide)); // Pass setCurrentSlide
+      nextButton.addEventListener('click', () => displayimg(imageNo += 1, setCurrentSlide)); // Pass setCurrentSlide
+
+      dotElements.forEach((dot, index) => {
+        dot.addEventListener('click', () => displayimg(imageNo = index + 1, setCurrentSlide)); // Pass setCurrentSlide
+      });
+    }
+
+    return () => { // Cleanup
+      if (prevButton && nextButton && dotElements) {
+        prevButton.removeEventListener('click', () => displayimg(imageNo -= 1, setCurrentSlide));
+        nextButton.removeEventListener('click', () => displayimg(imageNo += 1, setCurrentSlide));
+        dotElements.forEach((dot, index) => {
+          dot.removeEventListener('click', () => displayimg(imageNo = index + 1, setCurrentSlide));
+        });
+      }
+    };
+  }, []);
   return (
     <div>
       {images.map((image, i) => (
         <section
           key={i}
           ref={(el) => (sectionsRef.current[i] = el)}
-          className="section"
+          className={`section ${i === 4 ? 'section-small' : '' } ${i === 1 ? 'section-acm' : ''}${i === 0 ? 'section-video' : ''}`}
         >
           <div
             className="bg"
@@ -421,11 +481,11 @@ const Homepage = () => {
           <div className="content">
             {i === 0 ? (
               <div className="video-container">
-                 <div className="timer">
-                  <div className="sub_timer"><h1 className="digit">{timeLeft.days}</h1><p className="digit_name">Days</p></div>
-                  <div className="sub_timer"><h1 className="digit">{timeLeft.hours}</h1><p className="digit_name">Hours</p></div>
-                  <div className="sub_timer"><h1 className="digit">{timeLeft.minutes}</h1><p className="digit_name">Minutes</p></div>
-                  <div className="sub_timer"><h1 className="digit">{timeLeft.seconds}</h1><p className="digit_name">Seconds</p></div>
+                 <div className="timer ">
+                  <div className="sub_timer color-change-5x "><h1 className="digit">{timeLeft.days}</h1><p className="digit_name">Days</p></div>
+                  <div className="sub_timer color-change-5x"><h1 className="digit">{timeLeft.hours}</h1><p className="digit_name">Hours</p></div>
+                  <div className="sub_timer color-change-5x"><h1 className="digit">{timeLeft.minutes}</h1><p className="digit_name">Minutes</p></div>
+                  <div className="sub_timer color-change-5x"><h1 className="digit">{timeLeft.seconds}</h1><p className="digit_name">Seconds</p></div>
                 </div>
                 <div className="glow"></div>
                 <video className="intro-video" autoPlay muted loop>
@@ -459,10 +519,80 @@ const Homepage = () => {
                     </div>
                   </div>
                 </main>
+                <div className="head2">
+                <h2 className="text glitch" data-text={texts[i]}>
+                  {texts[i+1]}
+                </h2>
+                </div>
               </div>
+            ): i === 2 ? (
+                    <div className="container">
+                <div className="image" style={{ display: "block" }}>
+                  <img src="../../../../public/bg_10.jpg" alt="" />
+                </div>
+                <div className="image" style={{ display: "none" }}>
+                  <img src="../../../../public/bg_7.jpg" alt="" />
+                </div>
+                <div className="image" style={{ display: "none" }}>
+                  <img src="../../../../public/bg_6.jpg" alt="" />
+                </div>
+                <div className="image" style={{ display: "none" }}>
+                  <img src="../../../../public/bg_9.jpg" alt="" />
+                </div>
+                <div className="image" style={{ display: "none" }}>
+                  <img src="../../../../public/bg_5.jpg" alt="" />
+                </div>
+            
+                <div className="button">
+                  <a className="prev">❮</a>
+                  <a className="next">❯</a>
+                </div>
+                <div className="dots">
+                  <span className="dot active"></span>
+                  <span className="dot"></span>
+                  <span className="dot"></span>
+                  <span className="dot"></span>
+                  <span className="dot"></span>
+                </div>
+              </div>
+              
+            ): i === 3 ? (
+              // Adding slider inside section 2
+              <div>
+                <h2 className="text glitch" data-text={texts[i]}>
+                  {texts[i]}
+                </h2>
+                <main>
+                  <div className="slider" style={{"--width": "100px", "--height": "50px", "--quantity": "10"}}>
+                    <div className="list">
+                      {[...Array(10)].map((_, index) => (
+                        <div className="item" style={{"--position": index + 1}} key={index}>
+                          {/* <img src={`./slide/slider1_${index + 1}.png`} alt="" /> */}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="slider" data-reverse="true" style={{"--width": "200px", "--height": "200px", "--quantity": "9"}}>
+                    <div className="list">
+                      {[...Array(10)].map((_, index) => (
+                        <div className="item" style={{"--position": index + 1}} key={index}>
+                          <img src={`../../../../public/slide/slider2_${index + 1}.png`} alt="" />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </main>
+                <div className="head2">
+                <h2 className="text glitch" data-text={texts[i]}>
+                  {texts[i+1]}
+                </h2>
+                </div>
+              </div>
+            ): i === 4 ? (
+              // Adding slider inside section 2
+              <footer/>
             ): (
               <h2 className="text glitch" data-text={texts[i]}>
-                {texts[i]}
               </h2>
             )}
           </div>
@@ -473,6 +603,10 @@ const Homepage = () => {
 };
 
 export default Homepage;
+
+
+
+
 
 
 

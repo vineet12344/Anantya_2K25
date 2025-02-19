@@ -13,7 +13,7 @@ html body {
 
 @font-face {
   font-family: glitch;
-  src: url(./public/Geo-Regular.ttf);
+  src: url(./publisc/Geo-Regular.ttf);
 }
 .glitch {
   font-family: glitch;
@@ -29,7 +29,7 @@ html body {
 
 /* Navbar Styles */
 header {
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0);
   position: relative;
   align-items: center;
   padding: 0 2rem;
