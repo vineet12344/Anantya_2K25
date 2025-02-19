@@ -1,11 +1,9 @@
 #root {
-<<<<<<< HEAD
   background-color: rgb(0, 0, 0);
-=======
->>>>>>> 467e47d5b2ea917110c0823f492468f55422f0d5
+
   /* max-width: 1280px; */
   /* margin: 0 auto; */
- /* // padding: 2rem; */
+  /* // padding: 2rem; */
   /* text-align: center; */
   z-index: -10;
 }
