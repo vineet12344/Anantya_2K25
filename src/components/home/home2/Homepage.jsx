@@ -353,7 +353,7 @@ const Homepage = () => {
     "Happening This March In collaboration with",
     "Glimpses of Anantya 2024",
     "Sposnsored By",
-    "Bug Bounties",
+    "Join us to experience the Multiverse",   
     "Threat Analysis"
   ];
 

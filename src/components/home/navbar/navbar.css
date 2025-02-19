@@ -11,9 +11,10 @@ html body {
   display: flex;
 }
 
+
 @font-face {
   font-family: glitch;
-  src: url(./publisc/Geo-Regular.ttf);
+  src: url(./public/Geo-Regular.ttf);
 }
 .glitch {
   font-family: glitch;
