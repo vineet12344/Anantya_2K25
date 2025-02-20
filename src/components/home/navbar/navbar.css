@@ -1,16 +1,17 @@
 html body {
   overflow-x: hidden;
+  background-color: #000;
 }
 /* General Styles */
 .navbar {
+  margin-top: 20px;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   /* box-sizing: border-box; */
   font-family: "Open Sans", sans-serif;
   align-items: center;
   display: flex;
 }
-
 
 @font-face {
   font-family: glitch;
@@ -30,7 +31,8 @@ html body {
 
 /* Navbar Styles */
 header {
-  background-color: rgba(255, 255, 255, 0);
+  margin-top: 20px;
+  background-color: black;
   position: relative;
   align-items: center;
   padding: 0 2rem;
@@ -95,7 +97,6 @@ header {
   gap: 3rem;
   margin-left: 10rem;
   margin-right: 10rem;
-  
 }
 
 .navbar .toggle_btn {
@@ -186,7 +187,6 @@ header {
   .dropdown_menu.open {
     height: 27rem;
   }
-
 }
 
 /* Glitch Effect */
