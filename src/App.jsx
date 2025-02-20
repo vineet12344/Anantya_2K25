@@ -1,34 +1,25 @@
 
 import './App.css'
-import HomePage from './components/home/home2/Homepage'
 import Navbar from './components/home/navbar/navbar'
-<<<<<<< HEAD
-import Footer from './components/home/footer/footer'
-import { EventPage } from './components/events page/EventPage'
-=======
 import { EventPage } from './components/events page/EventPage'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from './components/home/home2/Homepage';
+import CalenderPage from './components/calender-page/calenderpage.jsx';
 
->>>>>>> 467e47d5b2ea917110c0823f492468f55422f0d5
+
+
 function App() {
   return (
-<<<<<<< HEAD
-    <>
-      <Navbar/>
-      <HomePage/>
-      <Footer/>
-    </>
-  )
-=======
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} />
+        <Route path="/" element={<Homepage/>} />
         <Route path="/events" element={<EventPage />} />
+        <Route path="/calender" element={<CalenderPage/>} />
+
       </Routes>
     </Router>
   );
->>>>>>> 467e47d5b2ea917110c0823f492468f55422f0d5
 }
 
 export default App;
