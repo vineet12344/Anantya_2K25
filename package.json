@@ -15,12 +15,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
     "clsx": "^2.1.1",
-<<<<<<< HEAD
-    "gsap": "^3.12.7",
-    "motion": "^12.4.1",
-=======
     "motion": "^12.4.2",
->>>>>>> 467e47d5b2ea917110c0823f492468f55422f0d5
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.0.1",
