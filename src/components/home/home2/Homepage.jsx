@@ -335,6 +335,7 @@ import "./Slider.css";
 import 'https://unpkg.com/shader-doodle';
 
 
+ 
 const Homepage = () => {
   const sectionsRef = useRef([]);
   const [currentSlide, setCurrentSlide] = useState(1);

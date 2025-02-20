@@ -123,7 +123,6 @@ function EventPage() {
           ${
             
           }
-
       </div>
     </div>
   );
