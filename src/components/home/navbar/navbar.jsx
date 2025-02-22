@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./navbar.css";
-import logo from "../../../../public/alogo.jpg";
+// import logo from "../../../../public/alogo.jpg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,7 @@ function Navbar() {
             <a href="">
             <div className="nav-logo">
             </div>
-              <span className="logo-text">Anantya</span>
+              <span className="logo-text" onClick={() => navigate("/")}>Anantya</span>
               {/* <span className="branches"> */}
               {/* <span className="branch"></span>
                 <span className="branch"></span>
