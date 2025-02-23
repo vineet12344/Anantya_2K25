@@ -333,7 +333,7 @@ import "./GlitchText.css";
 import "./Slider.css";
 // import footer from "../footer/footer";
 import 'https://unpkg.com/shader-doodle';
-
+// import CosmicAnimation from "./../../gallery/back";
 
  
 const Homepage = () => {
@@ -466,7 +466,9 @@ const Homepage = () => {
     };
   }, []);
   return (
+    
     <div>
+      {/* <CosmicAnimation /> */}
       {images.map((image, i) => (
         <section
           key={i}
