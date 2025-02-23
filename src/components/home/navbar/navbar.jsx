@@ -45,9 +45,9 @@ function Navbar() {
           <ul className="links">
             <li><a href="#" data-text="Home" className="glitch" onClick={() => navigate("/")}>Home</a></li>
             <li><a href="#" data-text="Events" className="glitch" onClick={() => navigate("/events")}>Events</a></li>
-            <li><a href="#" data-text="Gallery" className="glitch">Gallery</a></li>
+            <li><a href="#" data-text="Gallery" className="glitch"  onClick={()=> navigate("/gallery")}>Gallery</a></li>
             <li><a href="#" data-text="Calender" className="glitch" onClick={()=> navigate("/calender")} >Calender</a></li>
-            <li><a href="#" data-text="Team" className="glitch">Team</a></li>
+            <li><a href="#" data-text="Team" className="glitch" onClick={() => navigate("/team")}>Team</a></li>
           </ul>
           <div className="action_btn"><div className="galaxy-button">
             <button className="space-button">
@@ -65,11 +65,11 @@ function Navbar() {
         </div>
 
         <div className={`dropdown_menu ${isOpen ? 'open' : ''}`}>
-          <li><a href="#" data-text="Home" className="glitch">Home</a></li>
-          <li><a href="#" data-text="Events" className="glitch">Events</a></li>
-          <li><a href="#" data-text="Gallery" className="glitch">Gallery</a></li>
-          <li><a href="#" data-text="Calender" className="glitch">Calender</a></li>
-          <li><a href="#" data-text="Team" className="glitch">Team</a></li>
+          <li><a href="#" data-text="Home" className="glitch" onClick={() => navigate("/")}>Home</a></li>
+          <li><a href="#" data-text="Events" className="glitch" onClick={() => navigate("/events")}>Events</a></li>
+          <li><a href="#" data-text="Gallery" className="glitch" onClick={()=> navigate("/gallery")}>Gallery</a></li>
+          <li><a href="#" data-text="Calender" className="glitch" onClick={()=> navigate("/calender")} >Calender</a></li>
+          <li><a href="#" data-text="Team" className="glitch" onClick={() => navigate("/team")}>Team</a></li>
           <div className="action_btn"><div className="galaxy-button">
             <button className="space-button">
               <span className="backdrop" />

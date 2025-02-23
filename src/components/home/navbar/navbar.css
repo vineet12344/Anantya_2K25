@@ -1,6 +1,7 @@
 html body {
   overflow-x: hidden;
   background-color: #000;
+  
 }
 /* General Styles */
 .navbar {
@@ -11,6 +12,7 @@ html body {
   font-family: "Open Sans", sans-serif;
   align-items: center;
   display: flex;
+  position: sticky;
 }
 
 @font-face {
@@ -31,6 +33,7 @@ html body {
 
 /* Navbar Styles */
 header {
+  position: sticky;
   margin-top: 20px;
   background-color: black;
   position: relative;
