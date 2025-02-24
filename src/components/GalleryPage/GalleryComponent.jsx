@@ -151,9 +151,6 @@
 
 // export default SliderModal;
 
-
-
-
 import { motion } from "framer-motion";
 
 const images = [
@@ -171,7 +168,6 @@ const images = [
   "/gallery/sherlock3.png"
 ];
 
-
 const titles = [
   "AlphaByte", "AlphaByte", "AlphaByte", "Anantya2k24", "Action Replay",
   "Action Replay", "Action Replay", "Byte Me", "Codigo", "IPL Auction",
@@ -184,27 +180,25 @@ const titles = [
 // Define varying grid sizes for each image
 const gridSizes = [
   "col-span-2 row-span-1", "col-span-1 row-span-1", "col-span-3 row-span-1", "col-span-2 row-span-2", "col-span-1 row-span-1",
-
   "col-span-3 row-span-1", "col-span-2 row-span-2", "col-span-2 row-span-1", "col-span-2 row-span-1", "col-span-2 row-span-2",
   "col-span-2 row-span-1", "col-span-2 row-span-1", "col-span-3 row-span-1", "col-span-3 row-span-2", "col-span-3 row-span-2",
   "col-span-3 row-span-1", "col-span-2 row-span-2", "col-span-2 row-span-1", "col-span-2 row-span-1", "col-span-2 row-span-2", 
-  "col-span-2 row-span-3", "col-span-2 row-span-2",  
-
+  "col-span-2 row-span-3", "col-span-2 row-span-2",
 ];
 
 export default function AnimatedGallery() {
   return (
     <div className="relative p-8">
-      <div className="grid grid-cols-6 auto-rows-[250px] gap-4">
+      {/* Responsive grid structure */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
         {images.map((src, i) => (
-             
           <motion.div 
             key={i} 
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 , zIndex: 50 }}
             transition={{ duration: 0.3 }}
             className={`relative rounded-lg overflow-hidden shadow-lg ${gridSizes[i % gridSizes.length]}`}
           >
-            <img src={src} alt={`Gallery ${i}`} className="w-full h-full object-cover"/>
+            <img src={src} alt={`Gallery ${i}`} className="w-full h-full object-cover" />
             <motion.div 
               className="absolute inset-0 bg-black opacity-0 flex items-center justify-center text-white text-lg font-bold"
               whileHover={{ opacity: 0.5 }}
@@ -213,7 +207,6 @@ export default function AnimatedGallery() {
               {titles[i % titles.length]}
             </motion.div>
           </motion.div>
-        
         ))}
       </div>
     </div>
