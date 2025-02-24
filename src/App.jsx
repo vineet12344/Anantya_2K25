@@ -10,6 +10,7 @@ import TeamGrid from "./components/Team/team.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CalenderPage from "./components/calender-page/calenderpage.jsx";
 import Loader from "./components/Loader/Loader2.jsx";
+import Gallery from "./components/GalleryPage/GalleryPage.jsx";
 
 // Hello
 
@@ -28,9 +29,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<CollegeEvents />} />
-          {/* <Route path="/gallery" element={<Gallery />} /> */}
           <Route path="/calender" element={<CalenderPage />} />
           <Route path="/team" element={<TeamGrid />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </Router>}
