@@ -43,13 +43,13 @@ export default function TeamGrid() {
     {
       name: "WebMaster, ACM PCCOE ",
       role: "Vineet Salve",
-      imageUrl: "",
+      imageUrl: "public/team/vineet.jpg",
       linkedinUrl: "https://www.linkedin.com/in/vineet-salve-1b1b3b1b8",
     },
     {
       name: "WebMaster ,  ACM PCCOE",
       role: "Amey Jadhav",
-      imageUrl: "",
+      imageUrl: "public/team/amey.jpg",
       linkedinUrl: "https://www.linkedin.com/in/amey-jadhav-208984267/",
     }, {
       name: "Technical Head,ACM PCCOE",
@@ -60,7 +60,7 @@ export default function TeamGrid() {
     {
       name: "WebHead ,OWASP PCCOE",
       role: "Sumit Pisal",
-      imageUrl: "",
+      imageUrl: "public/team/sumit.jpg",
       linkedinUrl: "https://www.linkedin.com/in/sumit-pisal/",
     },
     {
@@ -70,17 +70,24 @@ export default function TeamGrid() {
       linkedinUrl: "https://www.linkedin.com/in/manasi-sabale-36a638233/",
     },
     {
+      name: "WebMaster ,ISTE PCCOE",
+      role: "Sumedh Pimplikar",
+      imageUrl: "public/team/sumedh.jpg",
+      linkedinUrl: "https://www.linkedin.com/in/sumedh-pimplikar",
+    },
+    {
       name: "Jr WebMaster ,OWASP PCCOE",
       role: "Pushkar Kirange",
-      imageUrl: "",
+      imageUrl: "public/team/pushkar.jpg",
       linkedinUrl: "www.linkedin.com/in/sumedh-pimplikar",
     },
     {
-      name: "WebMaster ,ISTE PCCOE",
-      role: "Sumedh Pimplikar",
-      imageUrl: "",
-      linkedinUrl: "www.linkedin.com/in/sumedh-pimplikar",
+      name: "Jr WebMaster ,ACM PCCOE",
+      role: "Parth Joshi",
+      imageUrl: "public/team/parth.jpg",
+      linkedinUrl: "https://www.linkedin.com/in/parth-joshi-9ab997306/",
     },
+    
   ];
 
   return (
