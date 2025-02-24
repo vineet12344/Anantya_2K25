@@ -4,7 +4,8 @@ import HomePage from "./components/home/home2/Homepage";
 import Navbar from "./components/home/navbar/navbar";
 import Footer from "./components/home/footer/footer";
 import CollegeEvents from "./components/events page/EventPage.jsx";
-import CosmicAnimation from "./components/gallery/back.jsx";
+// import Gallery from "./components/gallery/gallery.jsx";
+// import CosmicAnimation from "./components/gallery/back.jsx";
 import TeamGrid from "./components/Team/team.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CalenderPage from "./components/calender-page/calenderpage.jsx";
@@ -27,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<CollegeEvents />} />
-          <Route path="/gallery" element={<CosmicAnimation />} />
+          {/* <Route path="/gallery" element={<Gallery />} /> */}
           <Route path="/calender" element={<CalenderPage />} />
           <Route path="/team" element={<TeamGrid />} />
         </Routes>
