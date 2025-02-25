@@ -27,38 +27,20 @@ function Navbar() {
 
       <title>Anantya</title>
       <header>
-
-
-        <div className="navbar">
+        <div className="navbar" style={{ marginBottom: '20px' }}>
           <div className="logo">
             <a href="">
-            <div className="nav-logo">
-            </div>
+              <div className="nav-logo"></div>
               <span className="logo-text" onClick={() => navigate("/")}>Anantya</span>
-              {/* <span className="branches"> */}
-              {/* <span className="branch"></span>
-                <span className="branch"></span>
-                <span className="branch"></span> */}
-              {/* </span> */}
             </a>
           </div>
-          <ul className="links">
+          <ul className="links ">
             <li><a href="#" data-text="Home" className="glitch" onClick={() => navigate("/")}>Home</a></li>
             <li><a href="#" data-text="Events" className="glitch" onClick={() => navigate("/events")}>Events</a></li>
-            <li><a href="#" data-text="Gallery" className="glitch"  onClick={()=> navigate("/gallery")}>Gallery</a></li>
-            <li><a href="#" data-text="Calender" className="glitch" onClick={()=> navigate("/calender")} >Calender</a></li>
+            <li><a href="#" data-text="Gallery" className="glitch" onClick={() => navigate("/gallery")}>Gallery</a></li>
+            <li><a href="#" data-text="Calender" className="glitch" onClick={() => navigate("/calender")}>Calender</a></li>
             <li><a href="#" data-text="Team" className="glitch" onClick={() => navigate("/team")}>Team</a></li>
           </ul>
-          <div className="action_btn"><div className="galaxy-button">
-            <button className="space-button">
-              <span className="backdrop" />
-              <span className="galaxy" />
-              <label className="text">Register</label>
-            </button>
-            <div className="bodydrop" />
-          </div>
-          </div>
-          {/* <a href="#" className="action_btn">Register</a> */}
           <div className="toggle_btn" onClick={toggleMenu}>
             <i className={isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
           </div>
@@ -67,18 +49,9 @@ function Navbar() {
         <div className={`dropdown_menu ${isOpen ? 'open' : ''}`}>
           <li><a href="#" data-text="Home" className="glitch" onClick={() => navigate("/")}>Home</a></li>
           <li><a href="#" data-text="Events" className="glitch" onClick={() => navigate("/events")}>Events</a></li>
-          <li><a href="#" data-text="Gallery" className="glitch" onClick={()=> navigate("/gallery")}>Gallery</a></li>
-          <li><a href="#" data-text="Calender" className="glitch" onClick={()=> navigate("/calender")} >Calender</a></li>
+          <li><a href="#" data-text="Gallery" className="glitch" onClick={() => navigate("/gallery")}>Gallery</a></li>
+          <li><a href="#" data-text="Calender" className="glitch" onClick={() => navigate("/calender")}>Calender</a></li>
           <li><a href="#" data-text="Team" className="glitch" onClick={() => navigate("/team")}>Team</a></li>
-          <div className="action_btn"><div className="galaxy-button">
-            <button className="space-button">
-              <span className="backdrop" />
-              <span className="galaxy" />
-              <label className="text" data-text="Register">Register</label>
-            </button>
-            <div className="bodydrop" />
-          </div>
-          </div>
         </div>
       </header>
     </>

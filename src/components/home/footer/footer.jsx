@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className="footer mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
 
 
-      <div className="footer-content flex flex-col items-center text-white">
+      <div className="footer-content flex flex-col items-center text-white mt-30">
         <aside className="footer-images flex flex-row items-center mb-6">
-          <img src="/alogo.jpg" alt="Image 1" className="footer-image w-24 h-auto mb-4" />
+          <img src="/alogo.jpg" alt="Image 1" className="footer-image w-24  mb-4" />
           <img src="/pccoe_logo.png" alt="Image 2" className="footer-image w-24 h-auto" />
         </aside>
         <div className="flex justify-center text-white ">

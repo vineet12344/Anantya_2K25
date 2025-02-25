@@ -93,9 +93,9 @@ export default function TeamGrid() {
   return (
     <>
     {/* <SpiderManAnimation /> */}
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-900 px-4">
-      <h1 className="text-3xl font-bold text-white mb-8 flex justify-center">MEET OUR WEB-TEAM</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl">
+    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-900 px-4 ">
+      <h1 className="text-3xl font-bold text-white mb-8 flex justify-center mt-20 ">MEET OUR WEB-TEAM</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mb-15">
         {teamMembers.map((member, index) => (
           <TeamCard key={index} {...member} />
         ))}
