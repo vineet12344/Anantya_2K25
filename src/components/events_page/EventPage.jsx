@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
 import "./EventPage.css";
+
+
+
+
+
 const CollegeEvents = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [visibleEvents, setVisibleEvents] = useState(4);
   const [loadMoreClicks, setLoadMoreClicks] = useState(0);
   const [firstVideoEnded, setFirstVideoEnded] = useState(false);
   const [activeTab, setActiveTab] = useState("tech");
-
+    
   const techEvents = [
     {
       id: 1,
@@ -14,9 +19,9 @@ const CollegeEvents = () => {
       description:
         "Join us for CODIGO, an exciting programming event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "8th March",
-      imgUrl: "/src/components/eventspage/eventImages/codigo.png",
-      videoUrl1: "/src/components/events page/video1.mp4",
-      videoUrl2: "/src/components/events page/video2.mp4",
+      imgUrl: "/src/components/events_page/eventImages/codigo.png",
+      videoUrl1: "/src/components/events_page/video1.mp4",
+      videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-codigo",
       rulebookLink: "https://example.com/rulebook-codigo.pdf",
     },
@@ -26,9 +31,9 @@ const CollegeEvents = () => {
       description:
         "Join us for She Solves, an exciting coding event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "10th March",
-      imgUrl: "/src/components/eventspage/eventImages/she_solves.png",
-      videoUrl1: "/src/components/events page/video1.mp4",
-      videoUrl2: "/src/components/events page/video2.mp4",
+      imgUrl: "/src/components/events_page/eventImages/she_solves.png",
+      videoUrl1: "/src/components/events_page/video1.mp4",
+      videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-she-solves",
       rulebookLink: "https://example.com/rulebook-she-solves.pdf",
     },
@@ -39,8 +44,8 @@ const CollegeEvents = () => {
         "Join us for Hackathon, an exciting coding event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "12th March",
       imgUrl: "/src/components/eventspage/eventImages/hackathon.png",
-      videoUrl1: "/src/components/events page/video1.mp4",
-      videoUrl2: "/src/components/events page/video2.mp4",
+      videoUrl1: "/src/components/events_page/video1.mp4",
+      videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-hackathon",
       rulebookLink: "https://example.com/rulebook-hackathon.pdf",
     },
@@ -50,9 +55,9 @@ const CollegeEvents = () => {
       description:
         "Join us for Tech Talk, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "/src/components/eventspage/eventImages/tech_talk.png",
-      videoUrl1: "/src/components/events page/video1.mp4",
-      videoUrl2: "/src/components/events page/video2.mp4",
+      imgUrl: "/src/components/events_page/eventImages/tech_talk.png",
+      videoUrl1: "/src/components/events_page/video1.mp4",
+      videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
       rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
     },
@@ -65,9 +70,9 @@ const CollegeEvents = () => {
       description:
         "Join us for Cultural Fest, an exciting cultural event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "20th March",
-      imgUrl: "/src/components/eventspage/eventImages/cultural_fest.png",
-      videoUrl1: "/src/components/events page/video1.mp4",
-      videoUrl2: "/src/components/events page/video2.mp4",
+      imgUrl: "/src/components/events_page/eventImages/cultural_fest.png",
+      videoUrl1: "/src/components/events_page/video1.mp4",
+      videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-cultural-fest",
       rulebookLink: "https://example.com/rulebook-cultural-fest.pdf",
     },
@@ -77,9 +82,9 @@ const CollegeEvents = () => {
       description:
         "Join us for Sports Meet, an exciting sports event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "22nd March",
-      imgUrl: "/src/components/eventspage/eventImages/sports_meet.png",
-      videoUrl1: "/src/components/events page/video1.mp4",
-      videoUrl2: "/src/components/events page/video2.mp4",
+      imgUrl: "/src/components/events_page/eventImages/sports_meet.png",
+      videoUrl1: "/src/components/events_page/video1.mp4",
+      videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-sports-meet",
       rulebookLink: "https://example.com/rulebook-sports-meet.pdf",
     },
@@ -90,8 +95,8 @@ const CollegeEvents = () => {
         "Join us for Art Exhibition, an exciting art event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "25th March",
       imgUrl: "/src/components/eventspage/eventImages/art_exhibition.png",
-      videoUrl1: "/src/components/events page/video1.mp4",
-      videoUrl2: "/src/components/events page/video2.mp4",
+      videoUrl1: "/src/components/events_page/video1.mp4",
+      videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-art-exhibition",
       rulebookLink: "https://example.com/rulebook-art-exhibition.pdf",
     },
@@ -102,8 +107,8 @@ const CollegeEvents = () => {
         "Join us for Music Concert, an exciting music event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "28th March",
       imgUrl: "/src/components/eventspage/eventImages/music_concert.png",
-      videoUrl1: "/src/components/events page/video1.mp4",
-      videoUrl2: "/src/components/events page/video2.mp4",
+      videoUrl1: "/src/components/events_page/video1.mp4",
+      videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-music-concert",
       rulebookLink: "https://example.com/rulebook-music-concert.pdf",
     },

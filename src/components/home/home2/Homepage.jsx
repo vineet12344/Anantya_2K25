@@ -2,6 +2,7 @@
 // import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import "./Homepage.css";
+// import imgBag from "/slide/bg_1.jpg";
 
 // const Homepage = () => {
 //   const sectionsRef = useRef([]);
@@ -342,11 +343,14 @@ const Homepage = () => {
     const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
 
   const images = [
-    "../../../../public/bg_3.jpg",
-    "../../../../public/bg_3.jpg",
-    "../../../../public/bg_3.jpg",
-    "../../../../public/bg_3.jpg"
-    
+    // "./slide/slider1_1.png",
+    // "./slide/slider1_2.png",  
+    "/slide/bg_1.jpg",
+    "/slide/bg_2.jpg", 
+    "/slide/bg_3.jpg",
+    "/slide/bg_4.jpg",
+   
+   
   ];
 
   const texts = [
@@ -357,8 +361,6 @@ const Homepage = () => {
     "Join us to experience the Multiverse",   
     "Threat Analysis"
   ];
-
-
 
 
   useEffect(() => {
@@ -531,19 +533,19 @@ const Homepage = () => {
             ): i === 2 ? (
                     <div className="container">
                 <div className="image" style={{ display: "block" }}>
-                  <img src="../../../../public/bg_10.jpg" alt="" />
+                  <img src="/bg_10.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="../../../../public/bg_7.jpg" alt="" />
+                  <img src="/public/bg_7.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="../../../../public/bg_6.jpg" alt="" />
+                  <img src="/public/bg_6.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="../../../../public/bg_9.jpg" alt="" />
+                  <img src="/public/bg_9.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="../../../../public/bg_5.jpg" alt="" />
+                  <img src="/public/bg_5.jpg" alt="" />
                 </div>
             
                 <div className="button">
