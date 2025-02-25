@@ -7,7 +7,7 @@
 // const Homepage = () => {
 //   const sectionsRef = useRef([]);
 
-//   const images = ["../../../../public/bg_3.jpg", "../../../../public/bg_7.jpg", "../../../../public/bg_4.jpg","../../../../public/bg_6.jpg","../../../../public/bg_9.jpg","../../../../public/bg_2.jpg"];
+//   const images = ["../../../../bg_3.jpg", "../../../../bg_7.jpg", "../../../../bg_4.jpg","../../../../bg_6.jpg","../../../../bg_9.jpg","../../../../bg_2.jpg"];
 
 //   useEffect(() => {
 //     gsap.registerPlugin(ScrollTrigger);
@@ -66,12 +66,12 @@
 //   const sectionsRef = useRef([]);
 
 //   const images = [
-//     "../../../../public/bg_3.jpg",
-//     "../../../../public/bg_7.jpg",
-//     "../../../../public/bg_4.jpg",
-//     "../../../../public/bg_6.jpg",
-//     "../../../../public/bg_9.jpg",
-//     "../../../../public/bg_2.jpg"
+//     "../../../../bg_3.jpg",
+//     "../../../../bg_7.jpg",
+//     "../../../../bg_4.jpg",
+//     "../../../../bg_6.jpg",
+//     "../../../../bg_9.jpg",
+//     "../../../../bg_2.jpg"
 //   ];
 
 //   const texts = [
@@ -144,12 +144,12 @@
 //   const sectionsRef = useRef([]);
 
 //   const images = [
-//     "../../../../public/bg_3.jpg",
-//     "../../../../public/bg_7.jpg",
-//     "../../../../public/bg_4.jpg",
-//     "../../../../public/bg_6.jpg",
-//     "../../../../public/bg_9.jpg",
-//     "../../../../public/bg_2.jpg"
+//     "../../../../bg_3.jpg",
+//     "../../../../bg_7.jpg",
+//     "../../../../bg_4.jpg",
+//     "../../../../bg_6.jpg",
+//     "../../../../bg_9.jpg",
+//     "../../../../bg_2.jpg"
 //   ];
 
 //   const texts = [
@@ -190,7 +190,7 @@
 //       {/* 🎥 Video Section */}
 //       <div className="video-container">
 //         <video className="intro-video" autoPlay muted loop>
-//           <source src="../../../../public/homebg.mp4" type="video/mp4" />
+//           <source src="../../../../homebg.mp4" type="video/mp4" />
 //           Your browser does not support the video tag.
 //         </video>
 //       </div>
@@ -233,12 +233,12 @@
 //   const sectionsRef = useRef([]);
 
 //   const images = [
-//     "../../../../public/bg_3.jpg",
-//     "../../../../public/bg_10.jpg",
-//     "../../../../public/bg_13.jpg",
-//     "../../../../public/bg_6.jpg",
-//     "../../../../public/bg_9.jpg",
-//     "../../../../public/bg_2.jpg"
+//     "../../../../bg_3.jpg",
+//     "../../../../bg_10.jpg",
+//     "../../../../bg_13.jpg",
+//     "../../../../bg_6.jpg",
+//     "../../../../bg_9.jpg",
+//     "../../../../bg_2.jpg"
 //   ];
 
 //   const texts = [
@@ -292,7 +292,7 @@
 //           {/* <div className="content">
 //             {i === 0 ? ( // Show video in the first section
 //               <video className="intro-video" autoPlay muted loop>
-//                 <source src="../../../../public/homebg.mp4" type="video/mp4" />
+//                 <source src="../../../../homebg.mp4" type="video/mp4" />
 //                 Your browser does not support the video tag.
 //               </video>
 //             ) : (
@@ -305,7 +305,7 @@
 //           {i === 0 ? ( 
 //             <div className="video-container">
 //               <video className="intro-video" autoPlay muted loop>
-//                 <source src="../../../../public/homebg.mp4" type="video/mp4" />
+//                 <source src="../../../../homebg.mp4" type="video/mp4" />
 //                 Your browser does not support the video tag.
 //               </video>
 //             </div>
@@ -518,7 +518,7 @@ const Homepage = () => {
                     <div className="list">
                       {[...Array(10)].map((_, index) => (
                         <div className="item" style={{"--position": index + 1}} key={index}>
-                          <img src={`../../../../public/slide/slider2_${index + 1}.png`} alt="" />
+                          <img src={`../../../../slide/slider2_${index + 1}.png`} alt="" />
                         </div>
                       ))}
                     </div>
@@ -536,16 +536,16 @@ const Homepage = () => {
                   <img src="/bg_10.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="/public/bg_7.jpg" alt="" />
+                  <img src="/bg_7.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="/public/bg_6.jpg" alt="" />
+                  <img src="/bg_6.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="/public/bg_9.jpg" alt="" />
+                  <img src="/bg_9.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="/public/bg_5.jpg" alt="" />
+                  <img src="/bg_5.jpg" alt="" />
                 </div>
             
                 <div className="button">
@@ -581,7 +581,7 @@ const Homepage = () => {
                     <div className="list">
                       {[...Array(10)].map((_, index) => (
                         <div className="item" style={{"--position": index + 1}} key={index}>
-                          <img src={`../../../../public/slide/slider2_${index + 1}.png`} alt="" />
+                          <img src={`../../../../slide/slider2_${index + 1}.png`} alt="" />
                         </div>
                       ))}
                     </div>
