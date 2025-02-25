@@ -19,7 +19,7 @@ const CollegeEvents = () => {
       description:
         "Join us for CODIGO, an exciting programming event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "8th March",
-      imgUrl: "public/poster/Codigo.png",
+      imgUrl: "/events_page/poster/Codigo.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-codigo",
@@ -31,7 +31,7 @@ const CollegeEvents = () => {
       description:
         "Join us for She Solves, an exciting coding event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "10th March",
-      imgUrl: "public/poster/SheSolves.png",
+      imgUrl: "/events_page/poster/SheSolves.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-she-solves",
@@ -43,7 +43,7 @@ const CollegeEvents = () => {
       description:
         "Join us for Blind Coding, an exciting coding event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "12th March",
-      imgUrl: "public/poster/BlindCoding.png",
+      imgUrl: "/events_page/poster/BlindCoding.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-hackathon",
@@ -55,7 +55,7 @@ const CollegeEvents = () => {
       description:
         "Join us for Byte Me, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "public/poster/Byteme.png",
+      imgUrl: "/events_page/poster/Byteme.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
@@ -67,7 +67,7 @@ const CollegeEvents = () => {
       description:
         "Join us for CAT, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "public/poster/CAT.png",
+      imgUrl: "/events_page/poster/CAT.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
@@ -79,7 +79,7 @@ const CollegeEvents = () => {
       description:
         "Join us for Code Relay, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "public/poster/CodeRelay.png",
+      imgUrl: "/events_page/poster/CodeRelay.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
@@ -91,8 +91,8 @@ const CollegeEvents = () => {
       description:
         "Join us for Coding Olympics, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "public/poster/CodingOlympics.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
+      imgUrl: "/events_page/poster/CodingOlympics.png",
+      videoUrl1: "/src/component/sevents_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
       rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
@@ -103,7 +103,7 @@ const CollegeEvents = () => {
       description:
         "Join us for InnovateX, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "public/poster/InnovateX.png",
+      imgUrl: "/events_page/poster/InnovateX.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
@@ -115,7 +115,7 @@ const CollegeEvents = () => {
       description:
         "Join us for MasterChef UI, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "public/poster/Masterchef UI.png",
+      imgUrl: "/events_page/poster/Masterchef UI.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
@@ -130,7 +130,7 @@ const CollegeEvents = () => {
       description:
         "Join us for Action Replay, an exciting cultural event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "20th March",
-      imgUrl: "public/poster/ActionReplay.png",
+      imgUrl: "/events_page/poster/ActionReplay.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-cultural-fest",
@@ -142,7 +142,7 @@ const CollegeEvents = () => {
       description:
         "Join us for Beast Games, an exciting sports event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "22nd March",
-      imgUrl: "public/poster/BeastGames.png",
+      imgUrl: "/events_page/poster/BeastGames.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-sports-meet",
@@ -154,7 +154,7 @@ const CollegeEvents = () => {
       description:
         "Join us for IPL Auction, an exciting art event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "25th March",
-      imgUrl: "public/poster/IPLAuction.png",
+      imgUrl: "/events_page/poster/IPLAuction.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-art-exhibition",
@@ -166,7 +166,7 @@ const CollegeEvents = () => {
       description:
         "Join us for Sherlock, an exciting music event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "28th March",
-      imgUrl: "public/poster/Sherlock.png",
+      imgUrl: "/events_page/poster/Sherlock.png",
       videoUrl1: "/src/components/events_page/video1.mp4",
       videoUrl2: "/src/components/events_page/video2.mp4",
       registrationLink: "https://example.com/register-music-concert",
