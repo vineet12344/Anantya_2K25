@@ -3,7 +3,7 @@ import { useState,useEffect } from "react";
 import HomePage from "./components/home/home2/Homepage";
 import Navbar from "./components/home/navbar/navbar";
 import Footer from "./components/home/footer/footer";
-import CollegeEvents from "./components/events page/EventPage.jsx";
+import CollegeEvents from "./components/events_page/EventPage.jsx";
 // import Gallery from "./components/gallery/gallery.jsx";
 // import CosmicAnimation from "./components/gallery/back.jsx";
 import TeamGrid from "./components/Team/team.jsx";
