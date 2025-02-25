@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
 const images = [
-  "public/gallery/ab.png", "public/gallery/ab1.png", "public/gallery/ab2.jpg", "public/gallery/ab.png", "public/gallery/demo1.jpg", 
-  "public/gallery/action.jpg", "public/gallery/ar.jpg", "public/gallery/ar1.jpg", "public/gallery/bme.jpg", "public/gallery/codigo11.jpg", 
-  "public/gallery/ipla.jpg", "public/gallery/iplauction.png", "public/gallery/iplauction11.jpg", "public/gallery/byte.png", "public/gallery/cat11.jpg",
-  "public/gallery/pp.png", "public/gallery/cat22.png", "public/gallery/catt.png", "public/gallery/cc1.png", "public/gallery/cc11.png", 
-  "public/gallery/codigo12.png", "public/gallery/mindmatrix.png", "public/gallery/crono.png", "public/gallery/flashm.png", "public/gallery/funmania1.png", 
-  "public/gallery/mindmatrix1.png", "public/gallery/pp2.png", "public/gallery/iplauction.png", "public/gallery/mindmatrix2.png", "public/gallery/iplauction11.jpg",
-  "public/gallery/mm1.png", "public/gallery/pp.png", "public/gallery/sher2.png", "public/gallery/sherlock.png", "public/gallery/sherlock3.png"
+  "/gallery/ab.png", "/gallery/ab1.png", "/gallery/ab2.jpg", "/gallery/ab.png", "/gallery/demo1.jpg", 
+  "/gallery/action.jpg", "/gallery/ar.jpg", "/gallery/ar1.jpg", "/gallery/bme.jpg", "/gallery/codigo11.jpg", 
+  "/gallery/ipla.jpg", "/gallery/iplauction.png", "/gallery/iplauction11.jpg", "/gallery/byte.png", "/gallery/cat11.jpg",
+  "/gallery/pp.png", "/gallery/cat22.png", "/gallery/catt.png", "/gallery/cc1.png", "/gallery/cc11.png", 
+  "/gallery/codigo12.png", "/gallery/mindmatrix.png", "/gallery/crono.png", "/gallery/flashm.png", "/gallery/funmania1.png", 
+  "/gallery/mindmatrix1.png", "/gallery/pp2.png", "/gallery/iplauction.png", "/gallery/mindmatrix2.png", "/gallery/iplauction11.jpg",
+  "/gallery/mm1.png", "/gallery/pp.png", "/gallery/sher2.png", "/gallery/sherlock.png", "/gallery/sherlock3.png"
 ];
 
 const titles = [
