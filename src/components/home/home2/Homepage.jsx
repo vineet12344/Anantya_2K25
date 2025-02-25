@@ -343,23 +343,19 @@ const Homepage = () => {
     const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
 
   const images = [
-    // "./slide/slider1_1.png",
-    // "./slide/slider1_2.png",  
-    "/slide/bg_1.jpg",
-    "/slide/bg_2.jpg", 
-    "/slide/bg_3.jpg",
-    "/slide/bg_4.jpg",
-   
-   
+    "../../../../slide/bg_1.jpg",
+    "../../../../slide/bg_2.jpg", 
+    "../../../../slide/bg_3.jpg",
+    "../../../../slide/bg_4.jpg",
   ];
 
   const texts = [
     "",
     "Happening This March In collaboration with",
-    "Glimpses of Anantya 2024",
+    // "Glimpses of Anantya 2024",
     "Sposnsored By",
     "Join us to experience the Multiverse",   
-    "Threat Analysis"
+    // "Threat Analysis"
   ];
   useEffect(() => {
     // Set target time for March 7, 2025, at 00:00:00
@@ -476,6 +472,9 @@ const Homepage = () => {
     
     <div>
       {/* <CosmicAnimation /> */}
+      {/* <div>
+        <h1 className="text-9xl text-center relative">Anantya 2k25</h1>
+      </div> */}
       {images.map((image, i) => (
         <section
           key={i}
@@ -544,19 +543,19 @@ const Homepage = () => {
             ): i === 2 ? (
                 <div className="container">
                 <div className="image" style={{ display: "block" }}>
-                  <img src="/bg_10.jpg" alt="" />
+                  <img src="../../../../bg_10.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="/bg_7.jpg" alt="" />
+                  <img src="../../../../bg_7.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="/bg_6.jpg" alt="" />
+                  <img src="../../../../bg_6.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="/bg_9.jpg" alt="" />
+                  <img src="../../../../bg_9.jpg" alt="" />
                 </div>
                 <div className="image" style={{ display: "none" }}>
-                  <img src="/bg_5.jpg" alt="" />
+                  <img src="../../../../bg_5.jpg" alt="" />
                 </div>
             
                 <div className="button">

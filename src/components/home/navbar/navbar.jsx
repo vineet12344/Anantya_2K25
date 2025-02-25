@@ -30,8 +30,11 @@ function Navbar() {
         <div className="navbar" style={{ marginBottom: '20px' }}>
           <div className="logo">
             <a href="">
-              <div className="nav-logo"></div>
-              <span className="logo-text" onClick={() => navigate("/")}>Anantya</span>
+              <div className="nav-logo ">
+               <img src="/alogo.jpg" alt="" className="max-w-[130px]" />
+
+              </div>
+              {/* <span className="logo-text" onClick={() => navigate("/")}>Anantya</span> */}
             </a>
           </div>
           <ul className="links ">

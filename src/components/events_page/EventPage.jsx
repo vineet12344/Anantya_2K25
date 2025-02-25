@@ -44,7 +44,7 @@ const CollegeEvents = () => {
       imgUrl: "/poster/BlindCoding.png",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
-      registrationLink: "https://example.com/register-hackathon",
+      registrationLink: "https://example.com/-hackathon",
       rulebookLink: "https://drive.google.com/file/d/1VtWD1DT7dJyuU7zDwvd-Ef0oHZfVJcuc/view?usp=drive_link",
     },
     {
@@ -348,13 +348,13 @@ const CollegeEvents = () => {
               </p>
               <div className="modal-buttons mt-4 flex justify-center gap-4">
                 <button
-                  onClick={() => (window.location.href = (activeTab === "tech" ? techEvents : nonTechEvents)[activeModal].registrationLink)}
+                  onClick={() => window.open((activeTab === "tech" ? techEvents : nonTechEvents)[activeModal].registrationLink, "_blank")}
                   className="bg-yellow-500 text-black px-6 py-2 rounded-md font-semibold"
                 >
                   Register
                 </button>
                 <button
-                  onClick={() => (window.location.href = (activeTab === "tech" ? techEvents : nonTechEvents)[activeModal].rulebookLink)}
+                  onClick={() => window.open((activeTab === "tech" ? techEvents : nonTechEvents)[activeModal].rulebookLink, "_blank")}
                   className="bg-blue-500 text-white px-6 py-2 rounded-md font-semibold"
                 >
                   Download Rulebook
