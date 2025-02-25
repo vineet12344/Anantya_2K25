@@ -21,7 +21,7 @@ const CollegeEvents = () => {
       videoUrl1: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/video1-dQeYtKSJJ8uyjUEDDiRs0aNRUsNAdV.mp4",
       videoUrl2: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/video2-t7beXZFdM7mS0augsccVkCNkAKLKkN.mp4",
       registrationLink: "https://example.com/register-codigo",
-      rulebookLink: "https://example.com/rulebook-codigo.pdf",
+      rulebookLink: "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=drive_link",
     },
     {
       id: 2,
@@ -32,8 +32,8 @@ const CollegeEvents = () => {
       imgUrl: "/poster/SheSolves.png",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
-      registrationLink: "https://example.com/register-she-solves",
-      rulebookLink: "https://example.com/rulebook-she-solves.pdf",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe-7RfFwf1UX_HYcOUXOBODBGYwBsF_BrK-s5AmyOOPE9DYUg/viewform",
+      rulebookLink: "https://drive.google.com/file/d/1zF4C4HjOS35V7GD9aXgAhrO610xe9MM-/view?usp=drive_link",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const CollegeEvents = () => {
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink: "https://example.com/register-hackathon",
-      rulebookLink: "https://example.com/rulebook-hackathon.pdf",
+      rulebookLink: "https://drive.google.com/file/d/1VtWD1DT7dJyuU7zDwvd-Ef0oHZfVJcuc/view?usp=drive_link",
     },
     {
       id: 4,
@@ -56,8 +56,8 @@ const CollegeEvents = () => {
       imgUrl: "/poster/Byteme.png",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
-      registrationLink: "https://example.com/register-tech-talk",
-      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScpYrea_RNf5lalNmDDdIt_pDq1L-OgHoRMQWsoO1A38q7RBA/viewform",
+      rulebookLink: "https://drive.google.com/file/d/1FhqTUgKxWoPB8-UDgsGLo5j1sgdcHRnl/view?usp=drive_link",
     },
     {
       id: 5,
@@ -69,7 +69,7 @@ const CollegeEvents = () => {
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
-      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+      rulebookLink: "https://drive.google.com/file/d/1UMVEUOQfyXJ-I-6w_pBq01T0Wy8jOna2/view?usp=drive_link",
     },
     {
       id: 6,
@@ -80,8 +80,8 @@ const CollegeEvents = () => {
       imgUrl: "/poster/CodeRelay.png",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
-      registrationLink: "https://example.com/register-tech-talk",
-      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeO9thlXfTxum5lmT6A9m7bjfz8ou1fnEOtzzvDxcp-mTr21Q/viewform",
+      rulebookLink: "https://drive.google.com/file/d/147ZgcYuLmndBOZT6clVaIJSpVze54CE0/view?usp=drive_link",
     },
     {
       id: 7,
@@ -93,7 +93,7 @@ const CollegeEvents = () => {
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
-      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+      rulebookLink: "https://drive.google.com/file/d/1SAXF7qdFVzKaoEiRMjN_kInl8ZTpo_wS/view?usp=drive_link",
     },
     {
       id: 8,
@@ -113,11 +113,11 @@ const CollegeEvents = () => {
       description:
         "Join us for MasterChef UI, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "/poster/Masterchef UI.png",
+      imgUrl: "/poster/Masterchef_UI.png",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
-      registrationLink: "https://example.com/register-tech-talk",
-      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+      registrationLink: "https://forms.gle/QvNkpzHNJLe82xF26",
+      rulebookLink: "https://drive.google.com/file/d/1GX8_DESDkZtXG0KDfeBGEl7BaUZUfWSC/view?usp=drive_link",
     },
   ];
 
@@ -131,8 +131,8 @@ const CollegeEvents = () => {
       imgUrl: "/poster/ActionReplay.png",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
-      registrationLink: "https://example.com/register-cultural-fest",
-      rulebookLink: "https://example.com/rulebook-cultural-fest.pdf",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdbSGHcmaG5PAqGbUmW4Mx9PP0u725h1fRP8e7JgIMb9NSTpw/viewform",
+      rulebookLink: "https://drive.google.com/file/d/1jJzf3rXcQcsexqTxfALOfhnpOWRqKPPG/view?usp=drive_link",
     },
     {
       id: 11,
@@ -144,7 +144,7 @@ const CollegeEvents = () => {
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink: "https://example.com/register-sports-meet",
-      rulebookLink: "https://example.com/rulebook-sports-meet.pdf",
+      rulebookLink: "https://drive.google.com/file/d/10VObLL05GEny0EWDR3tBuJ2QE5A1TqcG/view?usp=drive_link",
     },
     {
       id: 12,
@@ -155,8 +155,8 @@ const CollegeEvents = () => {
       imgUrl: "/poster/IPLAuction.png",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
-      registrationLink: "https://example.com/register-art-exhibition",
-      rulebookLink: "https://example.com/rulebook-art-exhibition.pdf",
+      registrationLink: "https://forms.gle/gS6CZUu7dHKPwUDU9",
+      rulebookLink: "https://drive.google.com/file/d/1c0OatJR5iS6LAufsOFiIq69ro-aIQwW0/view?usp=drive_link",
     },
     {
       id: 13,
@@ -167,8 +167,9 @@ const CollegeEvents = () => {
       imgUrl: "/poster/Sherlock.png",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
-      registrationLink: "https://example.com/register-music-concert",
-      rulebookLink: "https://example.com/rulebook-music-concert.pdf",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdguXk-7MzzQwhBLmjTGmFoBJCn6VpeENu1Eaf4nWSKRXGn_Q/viewform?usp=header",
+      rulebookLink: "https://drive.google.com/file/d/1D2kMoPAwBVjf4A8rabiWvqC1sbrMx3Pz/view?usp=sharing",
+      
     },
   ];
 
