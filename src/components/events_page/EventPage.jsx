@@ -19,9 +19,9 @@ const CollegeEvents = () => {
       description:
         "Join us for CODIGO, an exciting programming event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "8th March",
-      imgUrl: "/src/components/events_page/eventImages/codigo.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
-      videoUrl2: "/src/components/events_page/video2.mp4",
+      imgUrl: "public/poster/Codigo.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
       registrationLink: "https://example.com/register-codigo",
       rulebookLink: "https://example.com/rulebook-codigo.pdf",
     },
@@ -31,33 +31,93 @@ const CollegeEvents = () => {
       description:
         "Join us for She Solves, an exciting coding event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "10th March",
-      imgUrl: "/src/components/events_page/eventImages/she_solves.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
-      videoUrl2: "/src/components/events_page/video2.mp4",
+      imgUrl: "public/poster/SheSolves.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
       registrationLink: "https://example.com/register-she-solves",
       rulebookLink: "https://example.com/rulebook-she-solves.pdf",
     },
     {
       id: 3,
-      title: "Hackathon - Coding Event",
+      title: "Blind Coding",
       description:
-        "Join us for Hackathon, an exciting coding event at PCET's Pimpri Chinchwad College of Engineering.",
+        "Join us for Blind Coding, an exciting coding event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "12th March",
-      imgUrl: "/src/components/eventspage/eventImages/hackathon.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
-      videoUrl2: "/src/components/events_page/video2.mp4",
+      imgUrl: "public/poster/BlindCoding.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
       registrationLink: "https://example.com/register-hackathon",
       rulebookLink: "https://example.com/rulebook-hackathon.pdf",
     },
     {
       id: 4,
-      title: "Tech Talk - Seminar",
+      title: "Byte Me",
       description:
-        "Join us for Tech Talk, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+        "Join us for Byte Me, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
       date: "15th March",
-      imgUrl: "/src/components/events_page/eventImages/tech_talk.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
-      videoUrl2: "/src/components/events_page/video2.mp4",
+      imgUrl: "public/poster/Byteme.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
+      registrationLink: "https://example.com/register-tech-talk",
+      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+    },
+    {
+      id: 5,
+      title: "CAT",
+      description:
+        "Join us for CAT, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "15th March",
+      imgUrl: "public/poster/CAT.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
+      registrationLink: "https://example.com/register-tech-talk",
+      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+    },
+    {
+      id: 6,
+      title: "Code Relay",
+      description:
+        "Join us for Code Relay, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "15th March",
+      imgUrl: "public/poster/CodeRelay.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
+      registrationLink: "https://example.com/register-tech-talk",
+      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+    },
+    {
+      id: 7,
+      title: "Coding Olympics",
+      description:
+        "Join us for Coding Olympics, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "15th March",
+      imgUrl: "public/poster/CodingOlympics.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
+      registrationLink: "https://example.com/register-tech-talk",
+      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+    },
+    {
+      id: 8,
+      title: "InnovateX",
+      description:
+        "Join us for InnovateX, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "15th March",
+      imgUrl: "public/poster/InnovateX.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
+      registrationLink: "https://example.com/register-tech-talk",
+      rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+    },
+    {
+      id: 9,
+      title: "MasterChef UI",
+      description:
+        "Join us for MasterChef UI, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "15th March",
+      imgUrl: "public/poster/Masterchef UI.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
       registrationLink: "https://example.com/register-tech-talk",
       rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
     },
@@ -65,50 +125,50 @@ const CollegeEvents = () => {
 
   const nonTechEvents = [
     {
-      id: 5,
-      title: "Cultural Fest",
+      id: 10,
+      title: "Action Replay",
       description:
-        "Join us for Cultural Fest, an exciting cultural event at PCET's Pimpri Chinchwad College of Engineering.",
+        "Join us for Action Replay, an exciting cultural event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "20th March",
-      imgUrl: "/src/components/events_page/eventImages/cultural_fest.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
-      videoUrl2: "/src/components/events_page/video2.mp4",
+      imgUrl: "public/poster/ActionReplay.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
       registrationLink: "https://example.com/register-cultural-fest",
       rulebookLink: "https://example.com/rulebook-cultural-fest.pdf",
     },
     {
-      id: 6,
-      title: "Sports Meet",
+      id: 11,
+      title: "Beast Games",
       description:
-        "Join us for Sports Meet, an exciting sports event at PCET's Pimpri Chinchwad College of Engineering.",
+        "Join us for Beast Games, an exciting sports event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "22nd March",
-      imgUrl: "/src/components/events_page/eventImages/sports_meet.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
-      videoUrl2: "/src/components/events_page/video2.mp4",
+      imgUrl: "public/poster/BeastGames.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
       registrationLink: "https://example.com/register-sports-meet",
       rulebookLink: "https://example.com/rulebook-sports-meet.pdf",
     },
     {
-      id: 7,
-      title: "Art Exhibition",
+      id: 12,
+      title: "IPL Auction",
       description:
-        "Join us for Art Exhibition, an exciting art event at PCET's Pimpri Chinchwad College of Engineering.",
+        "Join us for IPL Auction, an exciting art event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "25th March",
-      imgUrl: "/src/components/eventspage/eventImages/art_exhibition.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
-      videoUrl2: "/src/components/events_page/video2.mp4",
+      imgUrl: "public/poster/IPLAuction.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
       registrationLink: "https://example.com/register-art-exhibition",
       rulebookLink: "https://example.com/rulebook-art-exhibition.pdf",
     },
     {
-      id: 8,
-      title: "Music Concert",
+      id: 13,
+      title: "Sherlock",
       description:
-        "Join us for Music Concert, an exciting music event at PCET's Pimpri Chinchwad College of Engineering.",
+        "Join us for Sherlock, an exciting music event at PCET's Pimpri Chinchwad College of Engineering.",
       date: "28th March",
-      imgUrl: "/src/components/eventspage/eventImages/music_concert.png",
-      videoUrl1: "/src/components/events_page/video1.mp4",
-      videoUrl2: "/src/components/events_page/video2.mp4",
+      imgUrl: "public/poster/Sherlock.png",
+      videoUrl1: "/src/components/events page/video1.mp4",
+      videoUrl2: "/src/components/events page/video2.mp4",
       registrationLink: "https://example.com/register-music-concert",
       rulebookLink: "https://example.com/rulebook-music-concert.pdf",
     },
@@ -242,9 +302,9 @@ const CollegeEvents = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black p-2 sm:p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black p-2 sm:p-4 position-relative btn">
       <h1 className="text-4xl font-bold text-red-600 text-center mb-6">Events</h1>
-      <div className="flex justify-center mb-4 btn">
+      <div className="flex justify-center mb-4 ">
         <>
           <button
             className={`px-2 py-1 mx-2 ${activeTab === "tech" ? "bg-red-600 text-white" : "bg-gray-300 text-black"} rounded-md`}
@@ -267,7 +327,7 @@ const CollegeEvents = () => {
       {firstVideoEnded && visibleEvents < (activeTab === "tech" ? techEvents.length : nonTechEvents.length) && (
         <button
           onClick={loadMore}
-          className="arrow mt-8 text-yellow-500 cursor-pointer px-6 py-2 rounded-md font-semibold load-more-animation"
+          className="btn1 mt-8 text-yellow-500 bg-white w-[50px] cursor-pointer px-6 py-2 rounded-md font-semibold load-more-animation position-relative"
         >
           More Events
         </button>
