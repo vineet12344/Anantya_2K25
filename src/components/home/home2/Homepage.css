@@ -131,13 +131,13 @@
     overflow: hidden;
 }
 .digit{
-    border: 0.095rem solid #ffffff;
+    /* border: 0.095rem solid #ffffff;
     border-bottom-right-radius: 0%;
-    border-bottom-left-radius: 0%;
+    border-bottom-left-radius: 0%; */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: lighter;
     font-size: 70px;
     text-align: center;
@@ -153,12 +153,13 @@ backdrop-filter: blur( 0px );
     text-align: center;
     padding: 0.6rem 0;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 
 @media (max-width: 768px) {
   .timer {
+    
       margin-top: 10rem;
       width: 261px; /* Reduce width */
       gap: 17px; /* Reduce gap */
@@ -186,7 +187,7 @@ backdrop-filter: blur( 0px );
   }
 
   .digit_name {
-      color: black;
+      color: rgb(255, 255, 255);
       font-size: 12px; /* Decrease label font size */
       padding: 0.4rem 0;
   }
@@ -234,7 +235,7 @@ backdrop-filter: blur( 0px );
     background: #ea2222;
   }
 } */
-
+/* 
 @-webkit-keyframes color-change-5x {
   0% {
     background: linear-gradient(to top, #ff0000 0%, #fffbb2 100%);
@@ -243,7 +244,7 @@ backdrop-filter: blur( 0px );
     background: linear-gradient(to top, #ff0000 0%, #fffbb2ee 100%);
   }
   40% {
-    background: linear-gradient(to top, #ff0000 0%, #fffbb2e1 75%); /* New color added */
+    background: linear-gradient(to top, #ff0000 0%, #fffbb2e1 75%); 
   }
   60% {
     background: linear-gradient(to top, #ff0000 0%, #fffbb2d1 50%);
@@ -263,7 +264,7 @@ backdrop-filter: blur( 0px );
     background: linear-gradient(to top, #ff0000 0%, #fffbb2ee 100%);
   }
   40% {
-    background: linear-gradient(to top, #ff0000 0%, #fffbb2e1 75%); /* New color added */
+    background: linear-gradient(to top, #ff0000 0%, #fffbb2e1 75%); 
   }
   60% {
     background: linear-gradient(to top, #ff0000 0%, #fffbb2d1 50%);
@@ -275,7 +276,7 @@ backdrop-filter: blur( 0px );
     background: linear-gradient(to top, #ff0000 0%, #fffbb2b1 0%);
   }
 }
-  
+   */
 
 /* image carsoul */
 .container{

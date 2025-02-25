@@ -361,25 +361,30 @@ const Homepage = () => {
     "Join us to experience the Multiverse",   
     "Threat Analysis"
   ];
-
-
   useEffect(() => {
-    // const targetTime = new Date("Oct 10, 2025 14:30:00").getTime();
-    const targetTime = new Date().getTime() + 18 * 24 * 60 * 60 * 1000; 
+    // Set target time for March 7, 2025, at 00:00:00
+    const targetTime = new Date("March 7, 2025 00:00:00").getTime();
+  
     const timerInterval = setInterval(() => {
       const now = new Date().getTime();
       const remainingTime = targetTime - now;
-
+  
       if (remainingTime <= 0) {
         clearInterval(timerInterval);
+        setTimeLeft({
+          days: "00",
+          hours: "00",
+          minutes: "00",
+          seconds: "00",
+        });
         return;
       }
-
+  
       const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
       const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-
+  
       setTimeLeft({
         days: days.toString().padStart(2, "0"),
         hours: hours.toString().padStart(2, "0"),
@@ -387,7 +392,7 @@ const Homepage = () => {
         seconds: seconds.toString().padStart(2, "0"),
       });
     }, 1000);
-
+  
     return () => clearInterval(timerInterval);
   }, []);
 
@@ -486,12 +491,18 @@ const Homepage = () => {
           <div className="content">
             {i === 0 ? (
               <div className="video-container">
-                 <div className="timer ">
-                  <div className="sub_timer color-change-5x "><h1 className="digit">{timeLeft.days}</h1><p className="digit_name">Days</p></div>
-                  <div className="sub_timer color-change-5x"><h1 className="digit">{timeLeft.hours}</h1><p className="digit_name">Hours</p></div>
+                 <div className="timer  ">
+                  <div className="sub_timer  "><h1 className="digit">{timeLeft.days}</h1><p className="digit_name">Days</p></div>
+                  <div className="sub_timer "><h1 className="digit">{timeLeft.hours}</h1><p className="digit_name">Hours</p></div>
                   <div className="sub_timer color-change-5x"><h1 className="digit">{timeLeft.minutes}</h1><p className="digit_name">Minutes</p></div>
                   <div className="sub_timer color-change-5x"><h1 className="digit">{timeLeft.seconds}</h1><p className="digit_name">Seconds</p></div>
+                
+
+                
+                
                 </div>
+                
+                
                 <div className="glow"></div>
                 <video className="intro-video" autoPlay muted loop>
                   <source src="../../../../homebg.mp4" type="video/mp4" />
@@ -531,7 +542,7 @@ const Homepage = () => {
                 </div>
               </div>
             ): i === 2 ? (
-                    <div className="container">
+                <div className="container">
                 <div className="image" style={{ display: "block" }}>
                   <img src="/bg_10.jpg" alt="" />
                 </div>
@@ -581,7 +592,7 @@ const Homepage = () => {
                     <div className="list">
                       {[...Array(10)].map((_, index) => (
                         <div className="item" style={{"--position": index + 1}} key={index}>
-                          <img src={`../../../../slide/slider2_${index + 1}.png`} alt="" />
+                          <img src={`/slide/slider2_${index + 1}.png`} alt="" />
                         </div>
                       ))}
                     </div>
