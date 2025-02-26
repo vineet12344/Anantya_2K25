@@ -1,9 +1,11 @@
 import React from "react";
 import "./calendar.css";
-
+import bg from "./../../../../../public/bg_3.jpg";
 const Calendar = () => {
   return (
-    <div className="calendar-container">
+    <div className="calendar-container" style={{
+      backgroundImage: `url(${bg})`,
+    }}>
       <header>
         <div className="month">MARCH'25</div>
         

@@ -32,15 +32,19 @@ html body {
 } */
 
 /* Navbar Styles */
-header {
+.heads {
+  background: url("./../../../../public/bg_11.jpg");
   position: sticky;
-  margin-top: 20px;
+  margin-top: 10px;
+  /* margin: 20px; */
+  /* border: 1px solid white; */
+  padding: 3px;
   background-color: black;
   position: relative;
   align-items: center;
   padding: 0 2rem;
   z-index: 10;
-  width: 100vw;
+  width: 96vw;
 }
 
 .multiverse-text:hover {
