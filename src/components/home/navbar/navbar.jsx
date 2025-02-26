@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./navbar.css";
-// import logo from "../../../../public/alogo.jpg";
+import img from "./../../../../public/logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,12 +26,12 @@ function Navbar() {
       />
 
       <title>Anantya</title>
-      <header>
+      <header className="heads ">
         <div className="navbar" style={{ marginBottom: '20px' }}>
           <div className="logo">
             <a href="">
               <div className="nav-logo ">
-               <img src="/alogo.jpg" alt="" className="max-w-[130px]" />
+               <img src={img} alt="" className="max-w-[178px] mt-3 " />
 
               </div>
               {/* <span className="logo-text" onClick={() => navigate("/")}>Anantya</span> */}

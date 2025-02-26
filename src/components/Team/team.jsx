@@ -2,7 +2,7 @@
 // import React from "react";
 // import SpiderManAnimation from "../gallery/back";
 // import CosmicAnimation from "../gallery/back";
-
+import bg from "./../../../public/bg_3.jpg";
 // eslint-disable-next-line react/prop-types
 const TeamCard = ({ name, role, imageUrl, linkedinUrl }) => {
   return (
@@ -51,12 +51,7 @@ export default function TeamGrid() {
       role: "Amey Jadhav",
       imageUrl: "/team/amey.jpg",
       linkedinUrl: "https://www.linkedin.com/in/amey-jadhav-208984267/",
-    }, {
-      name: "Technical Head,ACM PCCOE",
-      role: "Aditya Vedpathak",
-      imageUrl: "",
-      linkedinUrl: "https://www.linkedin.com/in/aditya-vedpathak",
-    },
+    }, 
     {
       name: "WebHead ,OWASP PCCOE",
       role: "Sumit Pisal",
@@ -93,7 +88,9 @@ export default function TeamGrid() {
   return (
     <>
     {/* <SpiderManAnimation /> */}
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-900 px-4 ">
+    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-900 px-4 " style={{
+          backgroundImage: `url(${bg})`,
+        }}>
       <h1 className="text-3xl font-bold text-white mb-8 flex justify-center mt-20 ">MEET OUR WEB-TEAM</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mb-15">
         {teamMembers.map((member, index) => (
