@@ -12,6 +12,7 @@ const CollegeEvents = () => {
     
   const techEvents = [
     {
+<<<<<<< HEAD
         id: 1,
         title: "CODIGO - Programming Event",
         description:
@@ -22,6 +23,19 @@ const CollegeEvents = () => {
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfFBtmyhz8NyTnzTXWudSyttHxFoy2PNBCE0yt2u3vyZND56A/viewform?usp=header",
         rulebookLink: "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=sharing",
+=======
+
+      id: 1,
+      title: "CODIGO - Programming Event",
+      description:
+        "Join us for CODIGO, an exciting programming event at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "8th March",
+      imgUrl: "/poster/Codigo.png",
+      videoUrl1: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/video1-dQeYtKSJJ8uyjUEDDiRs0aNRUsNAdV.mp4",
+      videoUrl2: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/video2-t7beXZFdM7mS0augsccVkCNkAKLKkN.mp4",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfFBtmyhz8NyTnzTXWudSyttHxFoy2PNBCE0yt2u3vyZND56A/viewform?usp=header",
+      rulebookLink: "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=drive_link",
+>>>>>>> dc7acf2a6e9af810f16f9bbb0e4622aadbf098f2
     },
     {
         id: 2,
@@ -36,6 +50,7 @@ const CollegeEvents = () => {
         rulebookLink: "https://drive.google.com/file/d/1zF4C4HjOS35V7GD9aXgAhrO610xe9MM-/view?usp=sharing",
     },
     {
+<<<<<<< HEAD
         id: 3,
         title: "Blind Coding",
         description:
@@ -46,6 +61,19 @@ const CollegeEvents = () => {
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScr0g_0jamSuNh15AdBcO92-9Sv0VZKeK1u9_us-X7QMywzUQ/viewform?usp=dialog",
         rulebookLink: "https://drive.google.com/file/d/14e0cHjgroBCoyr_z9aVRXkh4QCIAg9rY/view?usp=sharing",
+=======
+
+      id: 3,
+      title: "Blind Coding",
+      description:
+        "Join us for Blind Coding, an exciting coding event at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "12th March",
+      imgUrl: "/poster/BlindCoding.png",
+      videoUrl1: "/poster/video1.mp4",
+      videoUrl2: "/poster/video2.mp4",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScr0g_0jamSuNh15AdBcO92-9Sv0VZKeK1u9_us-X7QMywzUQ/viewform?usp=dialog",
+      rulebookLink: "https://drive.google.com/file/d/1VtWD1DT7dJyuU7zDwvd-Ef0oHZfVJcuc/view?usp=drive_link",
+>>>>>>> dc7acf2a6e9af810f16f9bbb0e4622aadbf098f2
     },
     {
         id: 4,
@@ -60,6 +88,7 @@ const CollegeEvents = () => {
         rulebookLink: "https://drive.google.com/file/d/1FhqTUgKxWoPB8-UDgsGLo5j1sgdcHRnl/view?usp=sharing",
     },
     {
+<<<<<<< HEAD
         id: 5,
         title: "CAT",
         description:
@@ -70,6 +99,19 @@ const CollegeEvents = () => {
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/tmoBmwvQKbCVifTo9",
         rulebookLink: "https://drive.google.com/file/d/1UMVEUOQfyXJ-I-6w_pBq01T0Wy8jOna2/view?usp=sharing",
+=======
+
+      id: 5,
+      title: "CAT",
+      description:
+        "Join us for CAT, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "15th March",
+      imgUrl: "/poster/CAT.png",
+      videoUrl1: "/poster/video1.mp4",
+      videoUrl2: "/poster/video2.mp4",
+      registrationLink: "https://forms.gle/tmoBmwvQKbCVifTo9",
+      rulebookLink: "https://drive.google.com/file/d/1UMVEUOQfyXJ-I-6w_pBq01T0Wy8jOna2/view?usp=drive_link",
+>>>>>>> dc7acf2a6e9af810f16f9bbb0e4622aadbf098f2
     },
     {
         id: 6,
@@ -84,6 +126,7 @@ const CollegeEvents = () => {
         rulebookLink: "https://drive.google.com/file/d/147ZgcYuLmndBOZT6clVaIJSpVze54CE0/view?usp=sharing",
     },
     {
+<<<<<<< HEAD
         id: 7,
         title: "Coding Olympics",
         description:
@@ -94,6 +137,19 @@ const CollegeEvents = () => {
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/EBPyfywySgrdXE5Q6",
         rulebookLink: "https://example.com/rulebook-coding-olympics.pdf",
+=======
+
+      id: 7,
+      title: "Coding Olympics",
+      description:
+        "Join us for Coding Olympics, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+      date: "15th March",
+      imgUrl: "/poster/CodingOlympics.png",
+      videoUrl1: "/poster/video1.mp4",
+      videoUrl2: "/poster/video2.mp4",
+      registrationLink: "https://forms.gle/EBPyfywySgrdXE5Q6",
+      rulebookLink: "https://drive.google.com/file/d/1SAXF7qdFVzKaoEiRMjN_kInl8ZTpo_wS/view?usp=drive_link",
+>>>>>>> dc7acf2a6e9af810f16f9bbb0e4622aadbf098f2
     },
     {
         id: 8,
@@ -145,7 +201,12 @@ const nonTechEvents = [
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/gS6CZUu7dHKPwUDU9",
+<<<<<<< HEAD
         rulebookLink: "https://drive.google.com/file/d/1c0OatJR5iS6LAufsOFiIq69ro-aIQwW0/view?usp=sharing",
+=======
+        rulebookLink: "https://example.com/rulebook-art-exhibition.pdf",
+
+>>>>>>> dc7acf2a6e9af810f16f9bbb0e4622aadbf098f2
     },
     {
         id: 10,
