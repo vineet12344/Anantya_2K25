@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: glitch;
-  src: url(./public/Geo-Regular.ttf);
+  src: url(./../public/Geo-Regular.ttf);
 }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
