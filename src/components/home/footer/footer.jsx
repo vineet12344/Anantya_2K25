@@ -7,7 +7,7 @@ const Footer = () => {
 
       <div className="footer-content flex flex-col items-center text-white mt-30">
         <aside className="footer-images flex flex-row items-center mb-6">
-          <img src="/alogo.jpg" alt="Image 1" className="footer-image w-24 mb-4" />
+          <img src="/logo.png" alt="Image 1" className="footer-image w-24 mb-4" />
           <img src="/pccoe_logo.png" alt="Image 2" className="footer-image w-24 h-auto" />
         </aside>
         <div className="flex justify-center text-white ">

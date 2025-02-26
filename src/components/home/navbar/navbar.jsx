@@ -31,7 +31,7 @@ function Navbar() {
           <div className="logo">
             <a href="">
               <div className="nav-logo ">
-               <img src={img} alt="" className="max-w-[178px] mt-3 " />
+               <img src={img} alt="" className="max-w-[140px] mt-3 " />
 
               </div>
               {/* <span className="logo-text" onClick={() => navigate("/")}>Anantya</span> */}
