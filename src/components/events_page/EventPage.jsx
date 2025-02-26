@@ -21,7 +21,7 @@ const CollegeEvents = () => {
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfFBtmyhz8NyTnzTXWudSyttHxFoy2PNBCE0yt2u3vyZND56A/viewform?usp=header",
-        rulebookLink: "https://example.com/rulebook-codigo.pdf",
+        rulebookLink: "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=sharing",
     },
     {
         id: 2,
@@ -33,19 +33,19 @@ const CollegeEvents = () => {
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/PYCz3XLfqmbm8YgLA",
-        rulebookLink: "https://example.com/rulebook-she-solves.pdf",
+        rulebookLink: "https://drive.google.com/file/d/1zF4C4HjOS35V7GD9aXgAhrO610xe9MM-/view?usp=sharing",
     },
     {
         id: 3,
         title: "Blind Coding",
         description:
-            "Dive into the unknown dimensions of the Multiverse! Blind Coding will test your instincts and logic in a realm where sight is no longer your ally.",
+            "Code through the chaos of parallel realities where logic warps, syntax shifts, and only your intuition can restore order!",
         date: "",
         imgUrl: "/poster/BlindCoding.png",
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScr0g_0jamSuNh15AdBcO92-9Sv0VZKeK1u9_us-X7QMywzUQ/viewform?usp=dialog",
-        rulebookLink: "https://example.com/rulebook-hackathon.pdf",
+        rulebookLink: "https://drive.google.com/file/d/14e0cHjgroBCoyr_z9aVRXkh4QCIAg9rY/view?usp=sharing",
     },
     {
         id: 4,
@@ -57,19 +57,19 @@ const CollegeEvents = () => {
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScpYrea_RNf5lalNmDDdIt_pDq1L-OgHoRMQWsoO1A38q7RBA/viewform?usp=header",
-        rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+        rulebookLink: "https://drive.google.com/file/d/1FhqTUgKxWoPB8-UDgsGLo5j1sgdcHRnl/view?usp=sharing",
     },
     {
         id: 5,
         title: "CAT",
         description:
-            "Decode the secrets of the Multiverse! CAT challenges you to unlock new perspectives and navigate through the vast world of technology.",
+            "Navigate the infinite possibilities of logic, reasoning, and problem-solving across multiversal dimensions to prove your managerial prowess!",
         date: "",
         imgUrl: "/poster/CAT.png",
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/tmoBmwvQKbCVifTo9",
-        rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+        rulebookLink: "https://drive.google.com/file/d/1UMVEUOQfyXJ-I-6w_pBq01T0Wy8jOna2/view?usp=sharing",
     },
     {
         id: 6,
@@ -81,13 +81,13 @@ const CollegeEvents = () => {
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeO9thlXfTxum5lmT6A9m7bjfz8ou1fnEOtzzvDxcp-mTr21Q/viewform",
-        rulebookLink: "https://example.com/rulebook-tech-talk.pdf",
+        rulebookLink: "https://drive.google.com/file/d/147ZgcYuLmndBOZT6clVaIJSpVze54CE0/view?usp=sharing",
     },
     {
         id: 7,
         title: "Coding Olympics",
         description:
-            "Compete in the ultimate test of coding endurance! Coding Olympics will challenge your problem-solving skills with intense programming challenges.",
+            "Compete across multiversal realms where logic, speed, and innovation determine the ultimate coding champion!",
         date: "",
         imgUrl: "/poster/CodingOlympics.png",
         videoUrl1: "/poster/video1.mp4",
@@ -105,7 +105,7 @@ const CollegeEvents = () => {
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "Registeration Not Required",
-        rulebookLink: "https://example.com/rulebook-innovatex.pdf",
+        rulebookLink: "https://drive.google.com/file/d/1tDSKRNfQv-C_cKnqbx7k74CKzSyLe9pT/view?usp=sharing",
     },
     {
         id: 9,
@@ -117,7 +117,7 @@ const CollegeEvents = () => {
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/QvNkpzHNJLe82xF26",
-        rulebookLink: "https://example.com/rulebook-masterchef-ui.pdf",
+        rulebookLink: "https://drive.google.com/file/d/1GX8_DESDkZtXG0KDfeBGEl7BaUZUfWSC/view?usp=sharing",
     }
 ];
 
@@ -133,7 +133,7 @@ const nonTechEvents = [
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdguXk-7MzzQwhBLmjTGmFoBJCn6VpeENu1Eaf4nWSKRXGn_Q/viewform?usp=header",
-        rulebookLink: "https://drive.google.com/drive/folders/1-hhbOtS2dtTt4uFBYRkv1cb6DuWSXIBi",
+        rulebookLink: "https://drive.google.com/file/d/1zF4C4HjOS35V7GD9aXgAhrO610xe9MM-/view?usp=sharing",
     },
     {
         id: 12,
@@ -145,7 +145,7 @@ const nonTechEvents = [
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/gS6CZUu7dHKPwUDU9",
-        rulebookLink: "https://example.com/rulebook-art-exhibition.pdf",
+        rulebookLink: "https://drive.google.com/file/d/1c0OatJR5iS6LAufsOFiIq69ro-aIQwW0/view?usp=sharing",
     },
     {
         id: 10,
@@ -157,7 +157,7 @@ const nonTechEvents = [
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/ccFMLUQ5NACEtVgm9",
-        rulebookLink: "https://drive.google.com/file/d/1jJzf3rXcQcsexqTxfALOfhnpOWRqKPPG/view?usp=drive_link",
+        rulebookLink: "https://drive.google.com/file/d/10jBYi2aUnENtKqeIbn9eJXY8QKZU-cK2/view?usp=sharing",
     },
     {
         id: 11,
@@ -169,7 +169,7 @@ const nonTechEvents = [
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSej6Hj-E6ttV7CjTtC3jA_5VOtczT5wJ4wJZXxw9yhhFq5acg/viewform?usp=header",
-        rulebookLink: "https://drive.google.com/drive/folders/1aKxVLhD5ijSVQtyi0EwuR90QcwCuyw9o",
+        rulebookLink: "https://drive.google.com/file/d/10VObLL05GEny0EWDR3tBuJ2QE5A1TqcG/view?usp=sharing",
     },
 ];
 
@@ -360,6 +360,7 @@ const nonTechEvents = [
                   onClick={() => window.open((activeTab === "tech" ? techEvents : nonTechEvents)[activeModal].rulebookLink, "_blank")}
                   className="bg-blue-500 text-white px-6 py-2 rounded-md font-semibold"
                 >
+                  
                   Download Rulebook
                 </button>
               </div>
