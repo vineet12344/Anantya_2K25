@@ -134,7 +134,7 @@ const nonTechEvents = [
         videoUrl1: "/poster/video1.mp4",
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdguXk-7MzzQwhBLmjTGmFoBJCn6VpeENu1Eaf4nWSKRXGn_Q/viewform?usp=header",
-        rulebookLink: "https://drive.google.com/file/d/1zF4C4HjOS35V7GD9aXgAhrO610xe9MM-/view?usp=sharing",
+        rulebookLink: "https://drive.google.com/file/d/1D2kMoPAwBVjf4A8rabiWvqC1sbrMx3Pz/view?usp=sharing",
     },
     {
         id: 12,
