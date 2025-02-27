@@ -1,5 +1,5 @@
 html body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: #000;
   
 }
@@ -7,8 +7,10 @@ html body {
 .navbar {
   margin-top: 20px;
   margin: 0;
-  padding: 10px;
-  /* box-sizing: border-box; */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 40px;
   font-family: "Open Sans", sans-serif;
   align-items: center;
   display: flex;
@@ -33,18 +35,15 @@ html body {
 
 /* Navbar Styles */
 .heads {
-  background: url("./../../../../public/bg_11.jpg");
+  /* background: url("./../../../../public/bg_3.jpg"); */
   position: sticky;
-  margin-top: 10px;
-  /* margin: 20px; */
-  /* border: 1px solid white; */
-  padding: 3px;
-  background-color: black;
+  background: hsla(0, 0%, 0%, 0.8);
+  /* background-color: black; */
   position: relative;
   align-items: center;
   padding: 0 2rem;
-  z-index: 10;
-  width: 96vw;
+  z-index: 999;
+  width: 100vw;
 }
 
 .multiverse-text:hover {
@@ -127,15 +126,7 @@ html body {
   /* text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; */
 }
 
-.action_btn:hover {
-  /* background-color: #ff4444; Lighter red
-  text-shadow: 0 0 10px #ff4444, 0 0 20px #ff4444;
-  transform: scale(1.05); */
-}
 
-.action_btn:active {
-  /* transform: scale(0.95); */
-}
 
 /* Dropdown Menu */
 .dropdown_menu {
@@ -290,7 +281,6 @@ html body {
   z-index: 999;
   padding: 0 24px;
   font-weight: 600;
-  data-text: "Register";
 }
 .text::before {
   content: attr(data-text);

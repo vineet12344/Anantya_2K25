@@ -551,11 +551,11 @@ const Homepage = () => {
                     style={{
                       "--width": "100px",
                       "--height": "50px",
-                      "--quantity": "10",
+                      "--quantity": "12",
                     }}
                   >
                     <div className="list">
-                      {[...Array(10)].map((_, index) => (
+                      {[...Array(12)].map((_, index) => (
                         <div
                           className={`item item+${index}`}
                           style={{ "--position": index + 1 }}
@@ -572,11 +572,11 @@ const Homepage = () => {
                     style={{
                       "--width": "200px",
                       "--height": "200px",
-                      "--quantity": "9",
+                      "--quantity": "12",
                     }}
                   >
                     <div className="list">
-                      {[...Array(10)].map((_, index) => (
+                      {[...Array(12)].map((_, index) => (
                         <div
                           className="item"
                           style={{ "--position": index + 1 }}
