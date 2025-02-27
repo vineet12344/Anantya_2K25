@@ -1,19 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Timeline.css";
 import ExploreButton from "./Explore-button/explore-button";
-// import IplAuction from "../../../../../public/poster/IplAuction.png";
-// import SheSolves from "../../../../../public/poster/SheSolves.png";
-// import ByteMeCtf from "../../../../../public/poster/ByteMe.png";
-// import CodeRelay from "../../../../../public/poster/CodeRelay.png";
-// import ActionReplay from "../../../../../public/poster/ActionReplay.png";
-// import MasterChefUi from "../../../../../public/poster/MasterChefUI.jpg";
-// import Codigo from "../../../../../public/poster/Codigo.png";
-// import SherLock from "./../../../../public/poster/SherLock.png";
-// import Cat from "../../../../../public/poster/Cat.png";
-// import InnovateX from "../../../../../public/poster/InnovateX.png";
-// import BeastGames from "../../../../../public/poster/BeastGames.png";
-// import CodingOlympics from "../../../../../public/poster/CodingOlympics.png";
-// import BlindCoding from "../../../../../public/poster/BlindCoding.png";
+
 
 const IplAuction = "/poster/IPLAuction.png";
 const SheSolves = "/poster/SheSolves.png";
@@ -28,6 +16,27 @@ const InnovateX = "/poster/InnovateX.png";
 const BeastGames = "/poster/BeastGames.png";
 const CodingOlympics = "/poster/CodingOlympics.png";
 const BlindCoding = "/poster/BlindCoding.png";
+
+
+const rulebookCodigo = "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=sharing";
+const rulebookSheSolves = "https://drive.google.com/file/d/1zF4C4HjOS35V7GD9aXgAhrO610xe9MM-/view?usp=sharing";
+const rulebookBlindCoding = "https://drive.google.com/file/d/14e0cHjgroBCoyr_z9aVRXkh4QCIAg9rY/view?usp=sharing";
+const rulebookByteMe = "https://drive.google.com/file/d/1FhqTUgKxWoPB8-UDgsGLo5j1sgdcHRnl/view?usp=sharing";
+const rulebookCAT = "https://drive.google.com/file/d/1UMVEUOQfyXJ-I-6w_pBq01T0Wy8jOna2/view?usp=sharing";
+const rulebookCodeRelay = "https://drive.google.com/file/d/147ZgcYuLmndBOZT6clVaIJSpVze54CE0/view?usp=sharing";
+const rulebookCodingOlympics = "https://drive.google.com/file/d/1SAXF7qdFVzKaoEiRMjN_kInl8ZTpo_wS/view?usp=drive_link";
+const rulebookInnovateX = "https://drive.google.com/file/d/1tDSKRNfQv-C_cKnqbx7k74CKzSyLe9pT/view?usp=sharing";
+const rulebookMasterChefUI = "https://drive.google.com/file/d/1GX8_DESDkZtXG0KDfeBGEl7BaUZUfWSC/view?usp=sharing";
+
+const rulebookSherlock = "https://drive.google.com/file/d/1D2kMoPAwBVjf4A8rabiWvqC1sbrMx3Pz/view?usp=sharing";
+const rulebookIPLAuction = "https://drive.google.com/file/d/1c0OatJR5iS6LAufsOFiIq69ro-aIQwW0/view?usp=sharing";
+const rulebookActionReplay = "https://drive.google.com/file/d/10jBYi2aUnENtKqeIbn9eJXY8QKZU-cK2/view?usp=sharing";
+const rulebookBeastGames = "https://drive.google.com/file/d/10VObLL05GEny0EWDR3tBuJ2QE5A1TqcG/view?usp=sharing";
+
+
+
+
+
 
 const Timeline = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -95,7 +104,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookIPLAuction} />
             </div>
           </div>
         </div>
@@ -137,7 +146,7 @@ const Timeline = () => {
               ROUND 3
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookIPLAuction} />
             </div>
           </div>
         </div>
@@ -179,7 +188,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookBlindCoding }/>
             </div>
           </div>
         </div>
@@ -221,7 +230,7 @@ const Timeline = () => {
               ROUND 3
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookBlindCoding } />
             </div>
           </div>
         </div>
@@ -263,7 +272,7 @@ const Timeline = () => {
               ROUND 1
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCAT} />
             </div>
           </div>
         </div>
@@ -305,7 +314,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCAT} />
             </div>
           </div>
         </div>
@@ -347,7 +356,7 @@ const Timeline = () => {
               ROUND 3
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCAT} />
             </div>
           </div>
         </div>
@@ -389,7 +398,7 @@ const Timeline = () => {
               ROUND 1
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCodeRelay} />
             </div>
           </div>
         </div>
@@ -431,7 +440,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCodeRelay} />
             </div>
           </div>
         </div>
@@ -473,7 +482,7 @@ const Timeline = () => {
               ROUND 3
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCodeRelay} />
             </div>
           </div>
         </div>
@@ -515,7 +524,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookActionReplay} />
             </div>
           </div>
         </div>
@@ -557,7 +566,7 @@ const Timeline = () => {
               ROUND 3, 4
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookActionReplay} />
             </div>
           </div>
         </div>
@@ -599,7 +608,7 @@ const Timeline = () => {
               ROUND 1
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookMasterChefUI} />
             </div>
           </div>
         </div>
@@ -641,7 +650,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookMasterChefUI} />
             </div>
           </div>
         </div>
@@ -683,7 +692,7 @@ const Timeline = () => {
               ROUND 3
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookMasterChefUI} />
             </div>
           </div>
         </div>
@@ -725,7 +734,7 @@ const Timeline = () => {
               ROUND 1
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookByteMe} />
             </div>
           </div>
         </div>
@@ -767,7 +776,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookByteMe} />
             </div>
           </div>
         </div>
@@ -809,7 +818,7 @@ const Timeline = () => {
               ROUND 1
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCodingOlympics} />
             </div>
           </div>
         </div>
@@ -851,7 +860,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCodingOlympics} />
             </div>
           </div>
         </div>
@@ -893,7 +902,7 @@ const Timeline = () => {
               ROUND 3
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCodingOlympics} />
             </div>
           </div>
         </div>
@@ -935,7 +944,7 @@ const Timeline = () => {
               ROUND 1
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={InnovateX} />
             </div>
           </div>
         </div>
@@ -977,7 +986,7 @@ const Timeline = () => {
               ROUND 1
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookSheSolves} />
             </div>
           </div>
         </div>
@@ -1019,7 +1028,7 @@ const Timeline = () => {
               ROUND 2, 3
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookSherlock} />
             </div>
           </div>
         </div>
@@ -1061,7 +1070,7 @@ const Timeline = () => {
               ROUND 2
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCodigo} />
             </div>
           </div>
         </div>
@@ -1103,7 +1112,7 @@ const Timeline = () => {
               ROUND 3
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookCodigo} />
             </div>
           </div>
         </div>
@@ -1145,7 +1154,7 @@ const Timeline = () => {
               ROUND 1
             </p>
             <div className="explore">
-              <ExploreButton />
+              <ExploreButton rulebookLink={rulebookBeastGames} />
             </div>
           </div>
         </div>

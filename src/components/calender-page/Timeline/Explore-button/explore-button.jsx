@@ -1,9 +1,9 @@
 import React from "react";
 import "./explore-button.css";
 
-const ExploreButton = () => {
+const ExploreButton = ({rulebookLink}) => {
   return (
-    <a href="#" className="explore-button-link">
+    <a href={rulebookLink} className="explore-button-link">
       <button className="explore-button">
       <p className="glitch" data-text="EXPLORE">EXPLORE</p>
         <div className="clip">
