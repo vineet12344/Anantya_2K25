@@ -1,19 +1,33 @@
 import React, { useEffect, useState } from "react";
 import "./Timeline.css";
 import ExploreButton from "./Explore-button/explore-button";
-import IplAuction from "./../../../../public/poster/IplAuction.png";
-import SheSolves from "./../../../../public/poster/SheSolves.png";
-import ByteMeCtf from "./../../../../public/poster/ByteMe.png";
-import CodeRelay from "./../../../../public/poster/CodeRelay.png";
-import ActionReplay from "./../../../../public/poster/ActionReplay.png";
-import MasterChefUi from "./../../../../public/poster/MasterChefUI.jpg";
-import Codigo from "./../../../../public/poster/Codigo.png";
-import SherLock from "./../../../../public/poster/SherLock.png";
-import Cat from "./../../../../public/poster/Cat.png";
-import InnovateX from "./../../../../public/poster/InnovateX.png";
-import BeastGames from "./../../../../public/poster/BeastGames.png";
-import CodingOlympics from "./../../../../public/poster/CodingOlympics.png";
-import BlindCoding from "./../../../../public/poster/BlindCoding.png";
+// import IplAuction from "../../../../../public/poster/IplAuction.png";
+// import SheSolves from "../../../../../public/poster/SheSolves.png";
+// import ByteMeCtf from "../../../../../public/poster/ByteMe.png";
+// import CodeRelay from "../../../../../public/poster/CodeRelay.png";
+// import ActionReplay from "../../../../../public/poster/ActionReplay.png";
+// import MasterChefUi from "../../../../../public/poster/MasterChefUI.jpg";
+// import Codigo from "../../../../../public/poster/Codigo.png";
+// import SherLock from "./../../../../public/poster/SherLock.png";
+// import Cat from "../../../../../public/poster/Cat.png";
+// import InnovateX from "../../../../../public/poster/InnovateX.png";
+// import BeastGames from "../../../../../public/poster/BeastGames.png";
+// import CodingOlympics from "../../../../../public/poster/CodingOlympics.png";
+// import BlindCoding from "../../../../../public/poster/BlindCoding.png";
+
+const IplAuction = "/poster/IPLAuction.png";
+const SheSolves = "/poster/SheSolves.png";
+const ByteMeCtf = "/poster/Byteme.png";
+const CodeRelay = "/poster/CodeRelay.png";
+const ActionReplay = "/poster/ActionReplay.png";
+const MasterChefUi = "/poster/MasterChefUI.jpg";
+const Codigo = "/poster/Codigo.png";
+const SherLock = "/poster/Sherlock.png";
+const Cat = "/poster/CAT.png";
+const InnovateX = "/poster/InnovateX.png";
+const BeastGames = "/poster/BeastGames.png";
+const CodingOlympics = "/poster/CodingOlympics.png";
+const BlindCoding = "/poster/BlindCoding.png";
 
 const Timeline = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
