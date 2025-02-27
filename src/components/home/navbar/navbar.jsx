@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 import img from "./../../../../public/logo.png";
-
+import {motion } from "framer-motion";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -38,11 +38,14 @@ function Navbar() {
               <div className="nav-logo ">
                 <img src={img} alt="" className="max-w-[140px] mt-3 " />
               </div>
-              {/* <span className="logo-text" onClick={() => navigate("/")}>Anantya</span> */}
             </a>
           </div>
           <ul className="links ">
-            <li>
+            <motion.li
+             initial={{opacity:0, scale: 0.8, y: -20 }}
+             animate={{opacity:1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5 ,delay:0.3 }}
+            >
               <a
                 href="#"
                 data-text="Home"
@@ -51,8 +54,12 @@ function Navbar() {
               >
                 Home
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{opacity:0, scale: 0.8, y: -20 }}
+              animate={{opacity:1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5,delay:0.4 }}
+            >
               <a
                 href="#"
                 data-text="Events"
@@ -61,8 +68,12 @@ function Navbar() {
               >
                 Events
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{opacity:0, scale: 0.8, y: -20 }}
+              animate={{opacity:1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5 ,delay:0.5}}
+            >
               <a
                 href="#"
                 data-text="Gallery"
@@ -71,8 +82,12 @@ function Navbar() {
               >
                 Gallery
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{opacity:0, scale: 0.8, y: -20 }}
+              animate={{opacity:1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5 ,delay:0.6}}
+            >
               <a
                 href="#"
                 data-text="Calender"
@@ -81,8 +96,12 @@ function Navbar() {
               >
                 Calender
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{opacity:0, scale: 0.8, y: -20 }}
+              animate={{opacity:1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5 ,delay:0.7}}
+            >
               <a
                 href="#"
                 data-text="Team"
@@ -91,7 +110,7 @@ function Navbar() {
               >
                 Team
               </a>
-            </li>
+            </motion.li>
           </ul>
           <div className="toggle_btn" onClick={toggleMenu}>
             <i
@@ -101,7 +120,11 @@ function Navbar() {
         </div>
 
         <div className={`dropdown_menu ${isOpen ? "open" : ""}`}>
-          <li>
+          <motion.li
+            initial={{ scale: 0.8, y: -20 }}
+            animate={{ scale: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <a
               href="#"
               data-text="Home"
@@ -110,8 +133,12 @@ function Navbar() {
             >
               Home
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ scale: 0.8, y: -20 }}
+            animate={{ scale: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <a
               href="#"
               data-text="Events"
@@ -120,8 +147,12 @@ function Navbar() {
             >
               Events
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ scale: 0.8, y: -20 }}
+            animate={{ scale: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <a
               href="#"
               data-text="Gallery"
@@ -130,8 +161,12 @@ function Navbar() {
             >
               Gallery
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ scale: 0.8, y: -20 }}
+            animate={{ scale: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <a
               href="#"
               data-text="Calender"
@@ -140,8 +175,12 @@ function Navbar() {
             >
               Calender
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ scale: 0.8, y: -20 }}
+            animate={{ scale: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <a
               href="#"
               data-text="Team"
@@ -150,7 +189,7 @@ function Navbar() {
             >
               Team
             </a>
-          </li>
+          </motion.li>
         </div>
       </header>
     </div>
