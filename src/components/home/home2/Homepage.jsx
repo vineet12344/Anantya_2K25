@@ -173,7 +173,8 @@ export default function Home() {
 
         <div className=" relative z-10">
           <motion.div
-            className="max-w-3xl mx-auto text-center space-y-6"
+            className="w-[100vw] mx-auto text-center space-y-6"
+
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -227,7 +228,8 @@ export default function Home() {
                           key={index}
                         >
                           <img
-                            src={`./../../../../public/slide/slider2_${index + 1}.png`}
+                            src={`/slide/slider2_${index + 1}.png`}
+
                             alt=""
                           />
                         </div>
