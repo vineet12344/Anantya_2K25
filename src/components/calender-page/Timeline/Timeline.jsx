@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "./Timeline.css";
 import ExploreButton from "./Explore-button/explore-button";
 
@@ -21,15 +21,23 @@ const Timeline = () => {
 
   return (
     <div className="timeline-container">
-      <div className="line" style={{ background: `linear-gradient(to bottom, red ${scrollProgress * 100}%, white 0%)` }}></div>
+      <div className="line"
+      style={{
+        background: `linear-gradient(to bottom, red ${scrollProgress * 100}%, white 0%)`,
+      }}
+      ></div>
 
-      <div className="line" style={{ background: `linear-gradient(to bottom, red ${scrollProgress * 100}%, white 0%)` }}>
+      <div className="line" 
+        style={{
+          background: `linear-gradient(to bottom, red ${scrollProgress * 100}%, white 0%)`,
+        }}
+      >
         
 
 
         <div className="point" style={{ top: "2%", backgroundColor: scrollProgress >= 0.02 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "1%" }}>
-          <div className="poster-box"><div className="poster-box-1"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+          <div className="poster-box"><div className="poster-box-1"><img src="/poster/IPLAuction.png" alt="Event Poster" /></div></div>
           <div className="event-name-box">
           <p className="glitch" data-text="IPL AUCTION" style={{ fontSize: "27px", fontWeight: "bold" }}>IPL AUCTION</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -46,7 +54,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "5.8%", backgroundColor: scrollProgress >= 0.058 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "4.8%" }}>
-        <div className="poster-box"><div className="poster-box-2"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-2"><img src="/poster/IPLAuction.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="IPL AUCTION" style={{ fontSize: "27px", fontWeight: "bold" }}>IPL AUCTION</p>
           <p className="glitch" data-text="ROUND 3" style={{ fontSize: "14px" }}>ROUND 3</p>
@@ -64,7 +72,7 @@ const Timeline = () => {
         <div className="point" style={{ top: "9.6%", backgroundColor: scrollProgress >= 0.096 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "8.6%" }}>
         <div className="poster-box"><div className="poster-box-3">
-          <img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+          <img src="/poster/BlindCoding.png" alt="Event Poster" /></div></div>
           <div className="event-name-box">
           <p className="glitch" data-text="BLIND CODING" style={{ fontSize: "27px", fontWeight: "bold" }}>BLIND CODING</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -80,7 +88,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "13.52%", backgroundColor: scrollProgress >= 0.1352 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "12.52%" }}>
-        <div className="poster-box"><div className="poster-box-4"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-4"><img src="/poster/BlindCoding.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="BLIND CODING" style={{ fontSize: "27px", fontWeight: "bold" }}>BLIND CODING</p>
           <p className="glitch" data-text="ROUND 3" style={{ fontSize: "14px" }}>ROUND 3</p>
@@ -96,7 +104,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "17.36%", backgroundColor: scrollProgress >= 0.1736 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "16.36%" }}>
-        <div className="poster-box"><div className="poster-box-5"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-5"><img src="/poster/CAT.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CAT" style={{ fontSize: "27px", fontWeight: "bold" }}>CAT</p>
           <p className="glitch" data-text="ROUND 1" style={{ fontSize: "14px" }}>ROUND 1</p>
@@ -112,7 +120,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "21.2%", backgroundColor: scrollProgress >= 0.22 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "20.2%" }}>
-        <div className="poster-box"><div className="poster-box-6"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-6"><img src="/poster/CAT.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CAT" style={{ fontSize: "27px", fontWeight: "bold" }}>CAT</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -128,7 +136,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "25.04%", backgroundColor: scrollProgress >= 0.2504 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "24.04%" }}>
-        <div className="poster-box"><div className="poster-box-7"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-7"><img src="/poster/CAT.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CAT" style={{ fontSize: "24px", fontWeight: "bold" }}>CAT</p>
           <p className="glitch" data-text="ROUND 3" style={{ fontSize: "14px" }}>ROUND 3</p>
@@ -145,7 +153,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "28.88%", backgroundColor: scrollProgress >= 0.2888 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "27.88%" }}> 
-        <div className="poster-box"><div className="poster-box-8"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-8"><img src="/poster/CodeRelay.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CODE RELAY" style={{ fontSize: "24px", fontWeight: "bold" }}>CODE RELAY</p>
           <p className="glitch" data-text="ROUND 1" style={{ fontSize: "14px" }}>ROUND 1</p>
@@ -161,7 +169,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "32.72%", backgroundColor: scrollProgress >= 0.3272 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "31.72%" }}>
-        <div className="poster-box"><div className="poster-box-9"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-9"><img src="/poster/CodeRelay.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CODE RELAY" style={{ fontSize: "27px", fontWeight: "bold" }}>CODE RELAY</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -177,7 +185,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "36.56%", backgroundColor: scrollProgress >= 0.3656 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "35.56%" }}>
-        <div className="poster-box"><div className="poster-box-10"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-10"><img src="/poster/CodeRelay.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CODE RELAY" style={{ fontSize: "24px", fontWeight: "bold" }}>CODE RELAY</p>
           <p className="glitch" data-text="ROUND 3" style={{ fontSize: "14px" }}>ROUND 3</p>
@@ -193,7 +201,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "40.4%", backgroundColor: scrollProgress >= 0.404 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "39.4%" }}>
-        <div className="poster-box"><div className="poster-box-11"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-11"><img src="/poster/ActionReplay.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="ACTION REPLAY" style={{ fontSize: "24px", fontWeight: "bold" }}>ACTION REPLAY</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -210,7 +218,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "44.24%", backgroundColor: scrollProgress >= 0.4424 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "43.24%" }}>
-        <div className="poster-box"><div className="poster-box-12"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-12"><img src="/poster/CodeRelay.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="ACTION REPLAY" style={{ fontSize: "24px", fontWeight: "bold" }}>ACTION REPLAY</p>
           <p className="glitch" data-text="ROUND 3, 4" style={{ fontSize: "14px" }}>ROUND 3, 4</p>
@@ -226,7 +234,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "48.08%", backgroundColor: scrollProgress >= 0.4808 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "47.08%" }}>
-        <div className="poster-box"><div className="poster-box-13"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-13"><img src="/poster/MasterchefUI.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="MASTERCHEF UI" style={{ fontSize: "24px", fontWeight: "bold" }}>MASTERCHEF UI</p>
           <p className="glitch" data-text="ROUND 1" style={{ fontSize: "14px" }}>ROUND 1</p>
@@ -242,7 +250,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "51.92%", backgroundColor: scrollProgress >= 0.5192 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "50.92%" }}>
-        <div className="poster-box"><div className="poster-box-14"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-14"><img src="/poster/MasterchefUI.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="MASTERCHEF UI" style={{ fontSize: "24px", fontWeight: "bold" }}>MASTERCHEF UI</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -257,7 +265,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "55.76%", backgroundColor: scrollProgress >= 0.5576 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "54.76%" }}>
-        <div className="poster-box"><div className="poster-box-15"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-15"><img src="/poster/MasterchefUI.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="MASTERCHEF UI" style={{ fontSize: "24px", fontWeight: "bold" }}>MASTERCHEF UI</p>
           <p className="glitch" data-text="ROUND 3" style={{ fontSize: "14px" }}>ROUND 3</p>
@@ -273,7 +281,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "59.6%", backgroundColor: scrollProgress >= 0.596 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "58.6%" }}>
-        <div className="poster-box"><div className="poster-box-16"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-16"><img src="/poster/Byteme.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="BYTE ME" style={{ fontSize: "27px", fontWeight: "bold" }}>BYTE ME</p>
           <p className="glitch" data-text="ROUND 1" style={{ fontSize: "14px" }}>ROUND 1</p>
@@ -289,7 +297,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "63.44%", backgroundColor: scrollProgress >= 0.6344 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "62.44%" }}>
-        <div className="poster-box"><div className="poster-box-17"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-17"><img src="/poster/Byteme.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="BYTE ME" style={{ fontSize: "27px", fontWeight: "bold" }}>BYTE ME</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -305,7 +313,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "67.28%", backgroundColor: scrollProgress >= 0.6728 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "66.28%" }}>
-        <div className="poster-box"><div className="poster-box-18"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-18"><img src="/poster/CodingOlympics.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CODING OLYMPICS" style={{ fontSize: "22px", fontWeight: "bold" }}>CODING OLYMPICS</p>
           <p className="glitch" data-text="ROUND 1" style={{ fontSize: "14px" }}>ROUND 1</p>
@@ -321,7 +329,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "71.12%", backgroundColor: scrollProgress >= 0.7112 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "70.12%" }}>
-        <div className="poster-box"><div className="poster-box-19"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-19"><img src="/poster/CodingOlympics.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CODING OLYMPICS" style={{ fontSize: "22px", fontWeight: "bold" }}>CODING OLYMPICS</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -337,7 +345,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "74.96%", backgroundColor: scrollProgress >= 0.7496 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "73.96%" }}>
-        <div className="poster-box"><div className="poster-box-20"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-20"><img src="/poster/CodingOlympics.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CODING OLYMPICS" style={{ fontSize: "22px", fontWeight: "bold" }}>CODING OLYMPICS</p>
           <p className="glitch" data-text="ROUND 3" style={{ fontSize: "14px" }}>ROUND 3</p>
@@ -354,7 +362,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "78.88%", backgroundColor: scrollProgress >= 0.7888 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "77.88%" }}>
-        <div className="poster-box"><div className="poster-box-21"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-21"><img src="/poster/InnovateX.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="INNOVATE X" style={{ fontSize: "27px", fontWeight: "bold" }}>INNOVATE X</p>
           <p className="glitch" data-text="ROUND 1" style={{ fontSize: "14px" }}>ROUND 1</p>
@@ -370,7 +378,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "82.64%", backgroundColor: scrollProgress >= 0.8264 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "81.64%" }}>
-        <div className="poster-box"><div className="poster-box-22"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-22"><img src="/poster/SheSolves.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="SHE SOLVES" style={{ fontSize: "27px", fontWeight: "bold" }}>SHE SOLVES</p>
           <p className="glitch" data-text="ROUND 1" style={{ fontSize: "14px" }}>ROUND 1</p>
@@ -386,7 +394,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "86.48%", backgroundColor: scrollProgress >= 0.8648 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "85.48%" }}>
-        <div className="poster-box"><div className="poster-box-23"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-23"><img src="/poster/Sherlock.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="SHERLOCK" style={{ fontSize: "27px", fontWeight: "bold" }}>SHERLOCK</p>
           <p className="glitch" data-text="ROUND 2, 3" style={{ fontSize: "14px" }}>ROUND 2, 3</p>
@@ -402,7 +410,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "90.32%", backgroundColor: scrollProgress >= 0.9032 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "89.32%" }}>
-        <div className="poster-box"><div className="poster-box-24"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-24"><img src="/poster/Codigo.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CODIGO" style={{ fontSize: "27px", fontWeight: "bold" }}>CODIGO</p>
           <p className="glitch" data-text="ROUND 2" style={{ fontSize: "14px" }}>ROUND 2</p>
@@ -418,7 +426,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "94.16%", backgroundColor: scrollProgress >= 0.9416 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "93.16%" }}>
-        <div className="poster-box"><div className="poster-box-25"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-25"><img src="/poster/Codigo.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="CODIGO" style={{ fontSize: "27px", fontWeight: "bold" }}>CODIGO</p>
           <p className="glitch" data-text="ROUND 3" style={{ fontSize: "14px" }}>ROUND 3</p>
@@ -433,7 +441,7 @@ const Timeline = () => {
 
         <div className="point" style={{ top: "98%", backgroundColor: scrollProgress >= 0.98 ? "red" : "white" }}></div>
         <div className="container" style={{ top: "97%" }}>
-        <div className="poster-box"><div className="poster-box-25"><img src="src/assets/demo_pic.jpg" alt="Event Poster" /></div></div>
+        <div className="poster-box"><div className="poster-box-25"><img src="/poster/BeastGames.png" alt="Event Poster" /></div></div>
         <div className="event-name-box">
           <p className="glitch" data-text="BEAST GAMES" style={{ fontSize: "27px", fontWeight: "bold" }}>BEAST GAMES</p>
           <p className="glitch" data-text="ROUND 1" style={{ fontSize: "14px" }}>ROUND 1</p>
@@ -448,7 +456,11 @@ const Timeline = () => {
 
       </div>
 
-      <div className="line" style={{ background: `linear-gradient(to bottom, red ${scrollProgress * 100}%, white 0%)` }}></div>
+      <div className="line" 
+      style={{
+        background: `linear-gradient(to bottom, red ${scrollProgress * 100}%, white 0%)`,
+      }}
+      ></div>
     </div>
   );
 };
