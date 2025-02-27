@@ -5,7 +5,7 @@ import bg from "./../../../public/bg_3.jpg";
 
 const CollegeEvents = () => {
   const [activeModal, setActiveModal] = useState(null);
-  const [visibleEvents, setVisibleEvents] = useState(4);
+  const [visibleEvents, setVisibleEvents] = useState(9);
   const [loadMoreClicks, setLoadMoreClicks] = useState(0);
   const [firstVideoEnded, setFirstVideoEnded] = useState(false);
   const [activeTab, setActiveTab] = useState("tech");
@@ -268,10 +268,11 @@ const nonTechEvents = [
 
   const renderEventCards = () => {
     const events = activeTab === "tech" ? techEvents : nonTechEvents;
-    return events.slice(0, visibleEvents).map((event, index) => (
+    // console.log(events.length)
+    return events.map((event, index) => (
       <div
         key={event.id}
-        className="relative w-[90%] aspect-[3/4] overflow-hidden cursor-pointer transform transition duration-500 rounded-lg shadow-lg"
+        className="relative w-[90%] aspect-[3/4] cursor-pointer transform transition duration-500 rounded-lg shadow-lg"
         onClick={() => openModal(index)}
         
       >
@@ -287,9 +288,10 @@ const nonTechEvents = [
         <img
           id={`eventImage${index + 1}`}
           className="absolute inset-0 w-full h-full object-cover event-card hidden"
-          src={event.imgUrl || "/placeholder.svg"}
+          src={event.imgUrl }
           alt="Event Image"
         />
+        {console.log(event.imgUrl)}
         <video
           id={`video${index + 1}-2`}
           className="absolute inset-0 w-full h-full object-cover video-overlay"
@@ -323,18 +325,11 @@ const nonTechEvents = [
           </button>
         </>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
         {renderEventCards()}
       </div>
 
-      {firstVideoEnded && visibleEvents < (activeTab === "tech" ? techEvents.length : nonTechEvents.length) && (
-        <button
-          onClick={loadMore}
-          className="btn1 mt-8 text-yellow-500 bg-white w-[50px] cursor-pointer px-6 py-2 rounded-md font-semibold load-more-animation position-relative"
-        >
-          More Events
-        </button>
-      )}
+     
 
       {activeModal !== null && (
         <div className="modal active" onClick={closeModal}>
@@ -346,9 +341,9 @@ const nonTechEvents = [
               <p id="modalDetails" className="mt-2 text-lg">
                 {(activeTab === "tech" ? techEvents : nonTechEvents)[activeModal].description}
                 <br />
-                <span className="text-sm text-gray-300">
+                {/* <span className="text-sm text-gray-300">
                   Date: {(activeTab === "tech" ? techEvents : nonTechEvents)[activeModal].date}
-                </span>
+                </span> */}
               </p>
               <div className="modal-buttons mt-4 flex justify-center gap-4">
                 <button
@@ -392,8 +387,8 @@ const nonTechEvents = [
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border: 3px solid gold;
-          box-shadow: 0 0 15px gold;
+          border: 3px solid red;
+          box-shadow: 0 0 15px red;
           border-radius: 10px;
           transition: transform 0.3s ease-in-out;
         }

@@ -4,14 +4,14 @@
 
 // // // Define image items
 // // const items = [
-// //   { id: 1, url: '/images/image1.jpg' },
-// //   { id: 2, url: '/images/image2.jpg' },
-// //   { id: 3, url: '/images/image3.jpg' },
-// //   { id: 4, url: '/images/image4.jpg' },
-// //   { id: 5, url: '/images/image5.jpg' },
-// //   { id: 6, url: '/images/image6.jpg' },
-// //   { id: 7, url: '/images/image7.jpg' },
-// //   { id: 8, url: '/images/image8.jpg' },
+// //   { id: 1, url: '/images/image1.webp' },
+// //   { id: 2, url: '/images/image2.webp' },
+// //   { id: 3, url: '/images/image3.webp' },
+// //   { id: 4, url: '/images/image4.webp' },
+// //   { id: 5, url: '/images/image5.webp' },
+// //   { id: 6, url: '/images/image6.webp' },
+// //   { id: 7, url: '/images/image7.webp' },
+// //   { id: 8, url: '/images/image8.webp' },
 // // ];
 
 // // const Gallery = () => {
@@ -154,18 +154,18 @@
 import { motion } from "framer-motion";
 
 const images = [
-  "/gallery/ab.png", "/gallery/ab1.png", "/gallery/ab2.jpg", 
-  "/gallery/demo1.jpg", "/gallery/action.jpg", "/gallery/ar.jpg",
-  "/gallery/ar1.jpg", "/gallery/bme.jpg", "/gallery/codigo11.jpg", 
-  "/gallery/ipla.jpg", "/gallery/iplauction.png", "/gallery/iplauction11.jpg",
-  "/gallery/byte.png",  "/gallery/cat11.jpg", "/gallery/pp.png", 
-  "/gallery/cat22.png", "/gallery/catt.png", "/gallery/cc1.png", 
-  "/gallery/cc11.png", "/gallery/codigo12.png", "/gallery/mindmatrix.png", 
-  "/gallery/crono.png", "/gallery/flashm.png",  "/gallery/funmania1.png", 
-  "/gallery/mindmatrix1.png", "/gallery/pp2.png", "/gallery/iplauction.png", 
-  "/gallery/mindmatrix2.png", "/gallery/iplauction11.jpg", "/gallery/mm1.png",
-  "/gallery/pp.png", "/gallery/sher2.png", "/gallery/sherlock.png", 
-  "/gallery/sherlock3.png"
+  "/gallery/ab.webp", "/gallery/ab1.webp", "/gallery/ab2.webp", 
+  "/gallery/demo1.webp", "/gallery/action.webp", "/gallery/ar.webp",
+  "/gallery/ar1.webp", "/gallery/bme.webp", "/gallery/codigo11.webp", 
+  "/gallery/ipla.webp", "/gallery/iplauction.webp", "/gallery/iplauction11.webp",
+  "/gallery/byte.webp",  "/gallery/cat11.webp", "/gallery/pp.webp", 
+  "/gallery/cat22.webp", "/gallery/catt.webp", "/gallery/cc1.webp", 
+  "/gallery/cc11.webp", "/gallery/codigo12.webp", "/gallery/mindmatrix.webp", 
+  "/gallery/crono.webp", "/gallery/flashm.webp",  "/gallery/funmania1.webp", 
+  "/gallery/mindmatrix1.webp", "/gallery/pp2.webp", "/gallery/iplauction.webp", 
+  "/gallery/mindmatrix2.webp", "/gallery/iplauction11.webp", "/gallery/mm1.webp",
+  "/gallery/pp.webp", "/gallery/sher2.webp", "/gallery/sherlock.webp", 
+  "/gallery/sherlock3.webp"
 ];
 
 const titles = [

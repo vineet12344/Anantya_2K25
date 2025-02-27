@@ -2,7 +2,7 @@
 import './footer.css';
 const Footer = () => {
   return (
-    <footer className="footer mx-auto  px-4 py-16 sm:px-6 lg:px-8 bg-cover bg-center">
+    <footer className="footer mx-auto bg-cover bg-center">
 
 
       <div className="footer-content flex flex-col items-center text-white mt-30">

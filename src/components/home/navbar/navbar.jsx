@@ -9,10 +9,15 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
+  };1
 
+  const handleClick=(e)=>{
+    console.log(e);
+    navigate(e);
+    toggleMenu();
+  }
   return (
-    <>
+    <div className="sticky top-0 z-[999]">
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,38 +31,129 @@ function Navbar() {
       />
 
       <title>Anantya</title>
-      <header className="heads ">
-        <div className="navbar" style={{ marginBottom: '20px' }}>
+      <header className="heads bg-cover bg-center sticky top-0 z-[999]">
+        <div className="navbar sticky top-0 z-[999]">
           <div className="logo">
             <a href="">
               <div className="nav-logo ">
-               <img src={img} alt="" className="max-w-[140px] mt-3 " />
-
+                <img src={img} alt="" className="max-w-[140px] mt-3 " />
               </div>
               {/* <span className="logo-text" onClick={() => navigate("/")}>Anantya</span> */}
             </a>
           </div>
           <ul className="links ">
-            <li><a href="#" data-text="Home" className="glitch" onClick={() => navigate("/")}>Home</a></li>
-            <li><a href="#" data-text="Events" className="glitch" onClick={() => navigate("/events")}>Events</a></li>
-            <li><a href="#" data-text="Gallery" className="glitch" onClick={() => navigate("/gallery")}>Gallery</a></li>
-            <li><a href="#" data-text="Calender" className="glitch" onClick={() => navigate("/calender")}>Calender</a></li>
-            <li><a href="#" data-text="Team" className="glitch" onClick={() => navigate("/team")}>Team</a></li>
+            <li>
+              <a
+                href="#"
+                data-text="Home"
+                className="glitch"
+                onClick={() => navigate("/")}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-text="Events"
+                className="glitch"
+                onClick={() => navigate("/events")}
+              >
+                Events
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-text="Gallery"
+                className="glitch"
+                onClick={() => navigate("/gallery")}
+              >
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-text="Calender"
+                className="glitch"
+                onClick={() => navigate("/calender")}
+              >
+                Calender
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-text="Team"
+                className="glitch"
+                onClick={() => navigate("/team")}
+              >
+                Team
+              </a>
+            </li>
           </ul>
           <div className="toggle_btn" onClick={toggleMenu}>
-            <i className={isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
+            <i
+              className={isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"}
+            ></i>
           </div>
         </div>
 
-        <div className={`dropdown_menu ${isOpen ? 'open' : ''}`}>
-          <li><a href="#" data-text="Home" className="glitch" onClick={() => navigate("/")}>Home</a></li>
-          <li><a href="#" data-text="Events" className="glitch" onClick={() => navigate("/events")}>Events</a></li>
-          <li><a href="#" data-text="Gallery" className="glitch" onClick={() => navigate("/gallery")}>Gallery</a></li>
-          <li><a href="#" data-text="Calender" className="glitch" onClick={() => navigate("/calender")}>Calender</a></li>
-          <li><a href="#" data-text="Team" className="glitch" onClick={() => navigate("/team")}>Team</a></li>
+        <div className={`dropdown_menu ${isOpen ? "open" : ""}`}>
+          <li>
+            <a
+              href="#"
+              data-text="Home"
+              className="glitch"
+              onClick={() => handleClick("/")}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              data-text="Events"
+              className="glitch"
+              onClick={() => handleClick("/events")}
+            >
+              Events
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              data-text="Gallery"
+              className="glitch"
+              onClick={() => handleClick("/gallery")}
+            >
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              data-text="Calender"
+              className="glitch"
+              onClick={() => handleClick("/calender")}
+            >
+              Calender
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              data-text="Team"
+              className="glitch"
+              onClick={() => handleClick("/team")}
+            >
+              Team
+            </a>
+          </li>
         </div>
       </header>
-    </>
+    </div>
   );
 }
 
