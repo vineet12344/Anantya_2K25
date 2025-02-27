@@ -5,8 +5,10 @@ import "./Slider.css";
 import "./GlitchText.css";
 import PortalEffect from "./portal-effect";
 import img from "./../../../../public/main poster.jpg"
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate=useNavigate();
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -113,7 +115,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <motion.div variants={item} whileHover={{ y: -10 }}>
-              <a href="/events" className="">
+              <a href="#" onClick={()=>navigate("/events")} className="">
                 <div className="bg-gray-900/60 border border-red-900/30 rounded-lg p-6 text-center hover:bg-red-900/20 transition-colors">
                   <div className="bg-red-900/30 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 group-hover:bg-red-800/50 transition-colors">
                     <Sparkles className="h-6 w-6 text-red-400" />
@@ -124,7 +126,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div variants={item} whileHover={{ y: -10 }}>
-              <a href="/gallery" className="group">
+              <a href="#" onClick={()=>navigate("gallery")} className="group">
                 <div className="bg-gray-900/60 border border-red-900/30 rounded-lg p-6 text-center hover:bg-red-900/20 transition-colors">
                   <div className="bg-red-900/30 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 group-hover:bg-red-800/50 transition-colors">
                     <ImageIcon className="h-6 w-6 text-red-400" />
@@ -135,7 +137,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div variants={item} whileHover={{ y: -10 }}>
-              <a href="/calendar" className="group">
+              <a href="#" onClick={()=>navigate("calendar")} className="group">
                 <div className="bg-gray-900/60 border border-red-900/30 rounded-lg p-6 text-center hover:bg-red-900/20 transition-colors">
                   <div className="bg-red-900/30 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 group-hover:bg-red-800/50 transition-colors">
                     <Calendar className="h-6 w-6 text-red-400" />
@@ -146,7 +148,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div variants={item} whileHover={{ y: -10 }}>
-              <a href="/team" className="group">
+              <a href="#" onClick={()=>navigate("/team")} className="group">
                 <div className="bg-gray-900/60 border border-red-900/30 rounded-lg p-6 text-center hover:bg-red-900/20 transition-colors">
                   <div className="bg-red-900/30 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 group-hover:bg-red-800/50 transition-colors">
                     <Users className="h-6 w-6 text-red-400" />
@@ -174,7 +176,6 @@ export default function Home() {
         <div className=" relative z-10">
           <motion.div
             className="w-[100vw] mx-auto text-center space-y-6"
-
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -229,7 +230,6 @@ export default function Home() {
                         >
                           <img
                             src={`/slide/slider2_${index + 1}.png`}
-
                             alt=""
                           />
                         </div>
