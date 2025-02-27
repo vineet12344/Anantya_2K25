@@ -70,7 +70,10 @@ const CollegeEvents = () => {
         videoUrl2: "/poster/video2.mp4",
         registrationLink: "https://forms.gle/tmoBmwvQKbCVifTo9",
         rulebookLink: "https://drive.google.com/file/d/1UMVEUOQfyXJ-I-6w_pBq01T0Wy8jOna2/view?usp=sharing",
-        description:
+    },
+    { id:6,
+      title:"CodeRelay",
+      description:
             "Jump through parallel realities of code! Code Relay takes you on a fast-paced adventure where teamwork and strategy determine your success.",
         date: "",
         imgUrl: "/poster/CodeRelay.png",
