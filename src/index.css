@@ -9,6 +9,13 @@
   font-family: glitch;
   src: url(./../public/Geo-Regular.ttf);
 }
+
+.setWidth{
+  width: 60%;
+}
+.setWidth2{
+  width: 50%;
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
