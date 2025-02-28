@@ -94,7 +94,7 @@ function Navbar() {
                 className="glitch"
                 onClick={() => navigate("/calender")}
               >
-                Calender
+                Calendar
               </a>
             </motion.li>
             <motion.li
