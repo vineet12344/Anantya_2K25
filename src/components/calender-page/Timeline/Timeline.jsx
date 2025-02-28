@@ -46,7 +46,7 @@ const rulebookBeastGames =
 
 const events = [
   {
-    image: "/poster/IPLAuction.png",
+    image: "/poster/IPLAuction.jpg",
     name: "IPL AUCTION",
     round: "ROUND 2",
     date: "06 MARCH 2025",
@@ -57,7 +57,7 @@ const events = [
     progress: 0.02,
   },
   {
-    image: "/poster/IPLAuction.png",
+    image: "/poster/IPLAuction.jpg",
     name: "IPL AUCTION",
     round: "ROUND 3",
     date: "07 MARCH 2025",
