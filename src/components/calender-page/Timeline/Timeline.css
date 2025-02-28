@@ -28,6 +28,7 @@ header {
   justify-content: center;
   gap: 30px;
   padding: 20px;
+  min-height: 100%;
   position: relative;
   transform: translateX(-50px); /* Adjust the value as needed */
 }
@@ -250,18 +251,21 @@ header {
   
 }
 
+
 /* ✅ Hide Leftmost & Rightmost Lines on Smaller Screens */
 @media (max-width: 768px) {
   .line:first-child, /* Leftmost line */
   .line:last-child {  /* Rightmost line */
-    display: none;
+    visibility: hidden;
+  }
+  .line:nth-child(2){
+    position: absolute;
   }
 }
 
 @media (max-width: 768px) {
-  /* Hide date boxes on the left side */
   .date-box {
-    position: absolute; /* Ensure it positions properly */
+    /* position: absolute; Ensure it positions properly */
     left: calc(80px + 50px); /* Move it to the right of the line */
     width: auto;
     padding: 10px 15px;
@@ -279,7 +283,7 @@ header {
   /* Shift the center line to the left */
   .line {
     height: 9800px;
-    position: absolute;
+    /* position: absolute; */
     left: 80px; /* Adjust this value as needed */
     
   }
@@ -291,15 +295,18 @@ header {
   }
 }
 
+
+
+
 @media (max-width: 1024px) {
   /* Hide date boxes on the left side */
-  .date-box {
+  
+  .date-box{
     display: none;
   }
 
   /* Shift the center line to the left */
   .line {
-    position: absolute;
     left: 80px; /* Adjust this value as needed */
   }
 
@@ -309,36 +316,7 @@ header {
   }
 }
 
-/* 🔹 Fix for iPad Air & iPad Pro (820px - 1024px width) */
-@media (min-width: 820px) and (max-width: 1180px) {
-  /* Position the date box to the left of the container */
-  .date-box {
-    display: block; /* Ensure it is visible */
-    position: absolute;
-    left: 100px; /* Align to the left */
-    width: 250px; /* Adjust width as needed */
-    text-align: center;
-    height: fit-content;
-  }
 
-  /* Shift the center line slightly to the left */
-  .line {
-    position: absolute;
-    margin-left: 140px; /* Adjust for better positioning */
-  }
-
-  .point {
-    background-color: #ff0000;
-    z-index: 999;
-  }
-
-  /* Increase container width and move it right */
-  .container {
-    height: fit-content;
-    width: fit-content; /* Adjust width dynamically */
-    margin-left: 450px; /* Proper spacing from the line */
-  }
-}
 
 
 @media (max-width: 768px) {
