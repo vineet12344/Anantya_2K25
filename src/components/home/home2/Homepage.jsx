@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <section className="relative p-5 py-20 md:py-28 ">
+      <section className="relative p-5 py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0 h-full">
           <div className="absolute h-full inset-0 from-black via-red-900/20 to-black opacity-60"></div>
           <img
