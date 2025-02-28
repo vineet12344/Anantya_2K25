@@ -346,7 +346,6 @@ const CollegeEvents = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Cosmic{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-800">
               Events
             </span>
