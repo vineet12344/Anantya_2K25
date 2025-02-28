@@ -96,7 +96,7 @@ const CollegeEvents = () => {
       id: 7,
       title: "Coding Olympics",
       description:
-        "Join us for Coding Olympics, an exciting seminar at PCET's Pimpri Chinchwad College of Engineering.",
+        "Code your way through the multiverse-only the best survive the Coding Olympics!",
       date: "15th March",
       imgUrl: "/poster/CodingOlympics.png",
       videoUrl1: "/poster/video1.mp4",
