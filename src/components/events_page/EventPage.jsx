@@ -184,7 +184,7 @@ const CollegeEvents = () => {
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink:
-        "https://docs.google.com/forms/d/e/1FAIpQLSej6Hj-E6ttV7CjTtC3jA_5VOtczT5wJ4wJZXxw9yhhFq5acg/viewform?usp=header",
+        "https://docs.google.com/forms/d/e/1FAIpQLScz2he76aWOLbiYePY2Zj-d9XO9bu13y5rQ01_qYYC8AefJfA/viewform",
       rulebookLink:
         "https://drive.google.com/file/d/10VObLL05GEny0EWDR3tBuJ2QE5A1TqcG/view?usp=sharing",
     },
