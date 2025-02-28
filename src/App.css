@@ -5,8 +5,21 @@
   /* // padding: 2rem; */
   /* text-align: center; */
   z-index: -10;
+  cursor: url(/public/cursor7.png ), auto;
+
 }
 
+a{
+  cursor: url(/public/cursor9.png ), auto;
+}
+
+button{
+  cursor: url(/public/cursor9.png ), auto;
+}
+img{
+  cursor: url(/public/cursor9.png ), auto;
+
+}
 @font-face {
   font-family: glitch;
   src: url(./public/Geo-Regular.ttf);

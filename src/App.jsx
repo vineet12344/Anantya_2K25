@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CalenderPage from "./components/calender-page/calenderpage.jsx";
 import Loader from "./components/Loader/Loader2.jsx";
 import Gallery from "./components/GalleryPage/GalleryPage.jsx";
-
 // Hello
 
 function App() {
