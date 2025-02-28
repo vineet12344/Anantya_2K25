@@ -407,7 +407,7 @@ const Timeline = () => {
                     {`${item.round}`}
                   </p>
                   <div className="explore">
-                    <ExploreButton rulebookLink={rulebookIPLAuction} />
+                    <ExploreButton rulebookLink={`${item.rulebook}`} />
                   </div>
                 </div>
               </div>
