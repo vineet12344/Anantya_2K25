@@ -151,64 +151,132 @@
 
 // export default SliderModal;
 
-import { motion } from "framer-motion";
+"use client"
+
+// import Image from "next/image"
+// import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "./../ui/card";
+import { Button } from "../ui/button";
+import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 const images = [
-  "/gallery/ab.webp", "/gallery/ab1.webp", "/gallery/ab2.webp", 
-  "/gallery/demo1.webp", "/gallery/action.webp", "/gallery/ar.webp",
-  "/gallery/ar1.webp", "/gallery/bme.webp", "/gallery/codigo11.webp", 
-  "/gallery/ipla.webp", "/gallery/iplauction.webp", "/gallery/iplauction11.webp",
-  "/gallery/byte.webp",  "/gallery/cat11.webp", "/gallery/pp.webp", 
-  "/gallery/cat22.webp", "/gallery/catt.webp", "/gallery/cc1.webp", 
-  "/gallery/cc11.webp", "/gallery/codigo12.webp", "/gallery/mindmatrix.webp", 
-  "/gallery/crono.webp", "/gallery/flashm.webp",  "/gallery/funmania1.webp", 
-  "/gallery/mindmatrix1.webp", "/gallery/pp2.webp", "/gallery/iplauction.webp", 
-  "/gallery/mindmatrix2.webp", "/gallery/iplauction11.webp", "/gallery/mm1.webp",
-  "/gallery/pp.webp", "/gallery/sher2.webp", "/gallery/sherlock.webp", 
-  "/gallery/sherlock3.webp"
+  "/gallery/ab.webp", "/gallery/ab1.webp", "/gallery/ab2.webp", "/gallery/demo1.webp",
+  "/gallery/action.webp", "/gallery/ar.webp", "/gallery/ar1.webp", "/gallery/bme.webp",
+  "/gallery/codigo11.webp", "/gallery/ipla.webp", "/gallery/iplauction.webp", "/gallery/iplauction11.webp",
+  "/gallery/byte.webp", "/gallery/cat11.webp", "/gallery/pp.webp", "/gallery/cat22.webp",
+  "/gallery/catt.webp", "/gallery/cc1.webp", "/gallery/cc11.webp", "/gallery/codigo12.webp",
+  "/gallery/mindmatrix.webp", "/gallery/crono.webp", "/gallery/flashm.webp", "/gallery/funmania1.webp",
+  "/gallery/mindmatrix1.webp", "/gallery/pp2.webp", "/gallery/iplauction.webp", "/gallery/mindmatrix2.webp",
+  "/gallery/iplauction11.webp", "/gallery/mm1.webp", "/gallery/pp.webp", "/gallery/sher2.webp",
+  "/gallery/sherlock.webp", "/gallery/sherlock3.webp"
 ];
 
 const titles = [
   "AlphaByte", "AlphaByte", "AlphaByte", "Anantya2k24", "Action Replay",
   "Action Replay", "Action Replay", "Byte Me", "Codigo", "IPL Auction",
   "IPL Auction", "IPL Auction", "Byte Me", "CAT", "Poster Presentation",
-  "CAT", "CAT " , "ChronoClash", "ChronoClash", "Codigo", "MindMatrix", "ChronoClash", "Flashmob", "FunMania", 
-   "MindMatrix", "Poster Presentation", "IPL Auction", "MindMatrix", "MindMatrix", "Poster Presentation",
-   "SherLock", "SherLock","SherLock"
+  "CAT", "CAT", "ChronoClash", "ChronoClash", "Codigo", "MindMatrix", "ChronoClash", "Flashmob", "FunMania", 
+  "MindMatrix", "Poster Presentation", "IPL Auction", "MindMatrix", "MindMatrix", "Poster Presentation",
+  "SherLock", "SherLock", "SherLock"
 ];
 
-// Define varying grid sizes for each image
-const gridSizes = [
-  "col-span-2 row-span-1", "col-span-1 row-span-1", "col-span-3 row-span-1", "col-span-2 row-span-2", "col-span-1 row-span-1",
-  "col-span-3 row-span-1", "col-span-2 row-span-2", "col-span-2 row-span-1", "col-span-2 row-span-1", "col-span-2 row-span-2",
-  "col-span-2 row-span-1", "col-span-2 row-span-1", "col-span-3 row-span-1", "col-span-3 row-span-2", "col-span-3 row-span-2",
-  "col-span-3 row-span-1", "col-span-2 row-span-2", "col-span-2 row-span-1", "col-span-2 row-span-1", "col-span-2 row-span-2", 
-  "col-span-2 row-span-3", "col-span-2 row-span-2",
-];
+const galleryItems = titles.map((title, index) => ({
+  id: index + 1,
+  title,
+  image: images[index],
+})).sort((a, b) => a.title.localeCompare(b.title));
 
-export default function AnimatedGallery() {
+// console.log(galleryItems)
+
+// galleryItems.splice(galleryItems.indexOf("Anantya2k24"),1);
+
+const categories = [ "All",...new Set(titles)];
+
+export default function GalleryPage() {
+  const [activeCategory, setActiveCategory] = useState("All");
+  const filteredItems = activeCategory === "All" ? galleryItems : galleryItems.filter(item => item.title === activeCategory);
+
+  const [loading,setIsLoading]=useState(true);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(!loading);
+    },3000)
+  },[])
+
+  const Loader = () => {
+    return (
+      <></>
+    );
+  };
+  
+
   return (
-    <div className="relative p-8">
-      {/* Responsive grid structure */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-        {images.map((src, i) => (
-          <motion.div 
-            key={i} 
-            whileHover={{ scale: 1.1 , zIndex: 50 }}
-            transition={{ duration: 0.3 }}
-            className={`relative rounded-lg overflow-hidden shadow-lg ${gridSizes[i % gridSizes.length]}`}
+    <div className="flex flex-col min-h-screen text-white">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-red-900/20 to-black opacity-60"></div>
+          <img
+            src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1920&h=800"
+            alt="Gallery background with red nebula"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        <motion.div
+          className="relative z-10 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Cosmic{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-800">Gallery</span>
+          </h1>
+          <p className="text-xl text-gray-300 max-w-[800px] mx-auto">
+            Visual explorations of the multiverse, from microscopic quantum particles to vast cosmic structures.
+          </p>
+        </motion.div>
+      </section>
+
+      <section className="  flex flex-wrap py-8  justify-center gap-2">
+        {categories.map((category) => (
+          <Button
+            key={category}
+            variant={category === activeCategory ? "outline" : "outline"}
+            className={`px-4 py-2 setWidth3 rounded-lg cursor-pointer transition-all ${category === activeCategory ? "bg-red-600 text-white" : "border-red-500 text-red-400"}`}
+            onClick={() => setActiveCategory(category)}
           >
-            <img src={src} alt={`Gallery ${i}`} className="w-full h-full object-cover" />
-            <motion.div 
-              className="absolute inset-0 bg-black opacity-0 flex items-center justify-center text-white text-lg font-bold"
-              whileHover={{ opacity: 0.5 }}
-              transition={{ duration: 0.3 }}
-            >
-              {titles[i % titles.length]}
-            </motion.div>
+            {category}
+          </Button>
+        ))}
+      </section>
+
+      <section className="py-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-16">
+        {filteredItems.map((item) => (
+          <motion.div key={item.id} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} >
+            <Card className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
+              <motion.div className="relative aspect-video h-[100%] overflow-hidden">
+                {loading?Loader():
+                  <motion.img
+                  src={item.image}
+                  alt={item.title}
+                  fill="true"
+                  loading="lazy"
+                  className="object-cover transition-transform duration-500 hover:scale-110"
+                />
+                }
+              </motion.div>
+              <CardContent className="p-4 text-center">
+                <h3 className="text-lg font-semibold">{item.title}</h3>
+              </CardContent>
+            </Card>
           </motion.div>
         ))}
-      </div>
+      </section>
     </div>
   );
 }

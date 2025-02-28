@@ -61,7 +61,7 @@ export default function TeamGrid() {
     {
       name: "WebMaster ,ACM-W PCCOE ",
       role: "Mansi Sabale",
-      imageUrl: "",
+      imageUrl: "/team/mansi.jpg",
       linkedinUrl: "https://www.linkedin.com/in/manasi-sabale-36a638233/",
     },
     {
