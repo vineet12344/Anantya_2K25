@@ -32,14 +32,14 @@ export default function Home() {
           <img
             src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1920&h=1080&auto=format&fit=crop"
             alt="Cosmic background with red nebula"
-            className="object-cover w-full h-[80vh]"
-            priority
+            className="object-cover w-full h-[70vh] lg:h-[80vh] md:h-[80vh] "
+            priority="true"
           />
         </div>
 
         <div className=" relative z-10 grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
           <motion.div
-            className="space-y-6"
+            className="space-y-10"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 md:py-24 cosmic-gradient">
+      <section className="py-16 mt-12 md:py-24 cosmic-gradient">
         <div className="">
           <motion.div
             className="text-center mb-12"
@@ -93,11 +93,9 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <img
-              className="border-4 setWidth2 border-white shadow-white shadow-2xl"
+              className="border-4 setWidth2  border-white shadow-white shadow-2xl"
               src={img}
               alt="mainPoster"
-              height={400}
-              width={200}
             />
           </motion.div>
         </div>
@@ -175,7 +173,7 @@ export default function Home() {
 
         <div className=" relative z-10">
           <motion.div
-            className="w-[100vw] mx-auto text-center space-y-6"
+            className="w-[100vw] mx-auto text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -186,8 +184,8 @@ export default function Home() {
               Join our cosmic community and be the first to know about new discoveries, events, and interdimensional
               adventures.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div style={{background:"url('https://images.unsplash.com/photo-1539321908154-04927596764d?q=80&w=1920&h=800')"}}>
                 <h2 className="text glitch" data-text={""}>
                   {/* {texts[i]} */}
                 </h2>

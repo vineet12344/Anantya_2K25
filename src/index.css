@@ -10,12 +10,19 @@
   src: url(./../public/Geo-Regular.ttf);
 }
 
-.setWidth{
+.setWidth {
   width: 60%;
 }
-.setWidth2{
+.setWidth2 {
   width: 50%;
 }
+
+@media screen and (max-width: 768px) {
+  .setWidth2 {
+    width: 90%;
+  }
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
