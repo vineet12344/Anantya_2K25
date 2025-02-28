@@ -154,7 +154,7 @@ const CollegeEvents = () => {
       description:
         "Shape your dream team in a Multiversal cricket battle! IPL Auction brings out the strategist in you as you draft your ultimate lineup.",
       date: "",
-      imgUrl: "/poster/IPLAuction.png",
+      imgUrl: "/poster/IPLAuction.jpg",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink: "https://forms.gle/gS6CZUu7dHKPwUDU9",
