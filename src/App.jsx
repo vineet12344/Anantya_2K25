@@ -33,7 +33,7 @@ function App() {
           <Route path="/team" element={<TeamGrid />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>}
     </>
   );
