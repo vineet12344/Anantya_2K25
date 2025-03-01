@@ -25,7 +25,7 @@ function App() {
     <>
       {loading?<Loader/>:<Router>
         <Navbar />
-        <Spark/>
+        {/* <Spark/> */}
         <Click/>
         <Routes>
           <Route path="/" element={<HomePage />} />

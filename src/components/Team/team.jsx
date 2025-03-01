@@ -88,7 +88,7 @@ export default function TeamGrid() {
       name: "Jr WebMaster ,OWASP PCCOE",
       role: "Pushkar Kirange",
       imageUrl: "/team/pushkar.jpg",
-      linkedinUrl: "www.linkedin.com/in/sumedh-pimplikar",
+      linkedinUrl: "https://www.linkedin.com/in/pushkar-kirange-8b8a15298/",
     },
     {
       name: "Jr WebMaster ,ACM PCCOE",

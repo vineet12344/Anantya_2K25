@@ -8,8 +8,8 @@ const ClickEffectUI = ({ clicks }) => {
         <motion.img
           key={click.id}
           src={click.image}
-          initial={{ opacity: 2, scale: 1 }}
-          animate={{ opacity: 0, scale: 10 }}
+          initial={{ opacity: 10, scale: 1 }}
+          animate={{ opacity: 10, scale: 10 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="fixed z-[999] pointer-events-none"
           style={{
@@ -33,7 +33,7 @@ const ClickEffect = () => {
       id: Date.now(),
       x: e.clientX,
       y: e.clientY,
-      size: Math.random() * 20 + 10, // Random size between 10px - 30px
+      size: 5, // Fixed size
       image: "/cursorPath.png", // Replace with your image path
     };
 
