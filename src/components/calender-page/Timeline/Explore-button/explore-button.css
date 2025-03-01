@@ -16,7 +16,10 @@
     color: #ddebf0;
     cursor: pointer;
   }
-  
+  .explore-button{
+    cursor: url(/public/cursor9.png ), auto;
+  }
+ 
   .explore-button p {
     position: relative;
     z-index: 2;
