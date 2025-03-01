@@ -58,7 +58,7 @@ export default function TeamGrid() {
       name: "WebMaster, ACM PCCOE ",
       role: "Vineet Salve",
       imageUrl: "/team/vineet.jpg",
-      linkedinUrl: "https://www.linkedin.com/in/vineet-salve-1b1b3b1b8",
+      linkedinUrl: "https://www.linkedin.com/in/vineetsalve?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "WebMaster ,  ACM PCCOE",
