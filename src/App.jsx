@@ -11,8 +11,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CalenderPage from "./components/calender-page/calenderpage.jsx";
 import Loader from "./components/Loader/Loader2.jsx";
 import Gallery from "./components/GalleryPage/GalleryPage.jsx";
-// Hello
-
+import Spark from "./components/Spark/spark.jsx"
+import Click from "./components/Spark/click.jsx"
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -25,6 +25,8 @@ function App() {
     <>
       {loading?<Loader/>:<Router>
         <Navbar />
+        <Spark/>
+        <Click/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<CollegeEvents />} />
