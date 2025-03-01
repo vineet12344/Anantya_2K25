@@ -253,7 +253,7 @@ header {
 
 
 /* ✅ Hide Leftmost & Rightmost Lines on Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .line:first-child, /* Leftmost line */
   .line:last-child {  /* Rightmost line */
     visibility: hidden;
@@ -263,7 +263,7 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .date-box {
     /* position: absolute; Ensure it positions properly */
     left: calc(80px + 50px); /* Move it to the right of the line */
@@ -291,7 +291,7 @@ header {
   /* Adjust the containers to align properly */
   .container {
     height: fit-content;
-    
+    width: 300px;
   }
 }
 
@@ -301,9 +301,7 @@ header {
 @media (max-width: 1024px) {
   /* Hide date boxes on the left side */
   
-  .date-box{
-    display: none;
-  }
+
 
   /* Shift the center line to the left */
   .line {
@@ -312,19 +310,25 @@ header {
 
   /* Adjust the containers to align properly */
   .container {
-    margin-left: 40px; /* Shift containers accordingly */
+    margin-left: 70px; /* Shift containers accordingly */
+    width: 300px;
   }
 }
 
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* Hide the text inside the right container */
   .event-name-box {
     display: none;
   }
-
+  .date-box{
+    display: none;
+  }
+  .container{
+    margin-left: 40px;
+  }
   /* Hide the explore button */
   .explore {
     display: none;
@@ -338,7 +342,7 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* Poster Box */
   .poster-box {
     position: relative;

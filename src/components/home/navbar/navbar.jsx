@@ -2,20 +2,21 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 import img from "./../../../../public/logo.png";
-import {motion } from "framer-motion";
+import vid from "./../../Loader/component_2.mp4";
+import { motion } from "framer-motion";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };1
+  };
 
-  const handleClick=(e)=>{
+  const handleClick = (e) => {
     console.log(e);
     navigate(e);
     toggleMenu();
-  }
+  };
   return (
     <div className="sticky top-0 z-[999]">
       <meta charSet="UTF-8" />
@@ -31,7 +32,7 @@ function Navbar() {
       />
 
       <title>Anantya</title>
-      <header className="heads bg-cover bg-center sticky top-0 z-[999]">
+      <header className="heads flex justify-between bg-cover bg-center sticky top-0 z-[999]">
         <div className="navbar sticky top-0 z-[999]">
           <div className="logo">
             <a href="">
@@ -42,9 +43,9 @@ function Navbar() {
           </div>
           <ul className="links ">
             <motion.li
-             initial={{opacity:0, scale: 0.8, y: -20 }}
-             animate={{opacity:1, scale: 1, y: 0 }}
-              transition={{ duration: 0.5 ,delay:0.3 }}
+              initial={{ opacity: 0, scale: 0.8, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               <a
                 href="#"
@@ -56,9 +57,9 @@ function Navbar() {
               </a>
             </motion.li>
             <motion.li
-              initial={{opacity:0, scale: 0.8, y: -20 }}
-              animate={{opacity:1, scale: 1, y: 0 }}
-              transition={{ duration: 0.5,delay:0.4 }}
+              initial={{ opacity: 0, scale: 0.8, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
             >
               <a
                 href="#"
@@ -70,9 +71,9 @@ function Navbar() {
               </a>
             </motion.li>
             <motion.li
-              initial={{opacity:0, scale: 0.8, y: -20 }}
-              animate={{opacity:1, scale: 1, y: 0 }}
-              transition={{ duration: 0.5 ,delay:0.5}}
+              initial={{ opacity: 0, scale: 0.8, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
             >
               <a
                 href="#"
@@ -84,9 +85,9 @@ function Navbar() {
               </a>
             </motion.li>
             <motion.li
-              initial={{opacity:0, scale: 0.8, y: -20 }}
-              animate={{opacity:1, scale: 1, y: 0 }}
-              transition={{ duration: 0.5 ,delay:0.6}}
+              initial={{ opacity: 0, scale: 0.8, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
             >
               <a
                 href="#"
@@ -98,9 +99,9 @@ function Navbar() {
               </a>
             </motion.li>
             <motion.li
-              initial={{opacity:0, scale: 0.8, y: -20 }}
-              animate={{opacity:1, scale: 1, y: 0 }}
-              transition={{ duration: 0.5 ,delay:0.7}}
+              initial={{ opacity: 0, scale: 0.8, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
             >
               <a
                 href="#"
@@ -119,11 +120,18 @@ function Navbar() {
           </div>
         </div>
 
-        <div className={`dropdown_menu ${isOpen ? "open" : ""}`}>
+        <motion.div
+          key={isOpen}
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -100 }}
+          transition={{ duration: 0.4 }}
+          className={`dropdown_menu ${isOpen ? "open" : ""}`}
+        >
           <motion.li
-            initial={{ scale: 0.8, y: -20 }}
-            animate={{ scale: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <a
               href="#"
@@ -135,9 +143,9 @@ function Navbar() {
             </a>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.8, y: -20 }}
-            animate={{ scale: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
           >
             <a
               href="#"
@@ -149,9 +157,9 @@ function Navbar() {
             </a>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.8, y: -20 }}
-            animate={{ scale: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.5 }}
           >
             <a
               href="#"
@@ -163,9 +171,9 @@ function Navbar() {
             </a>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.8, y: -20 }}
-            animate={{ scale: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1.1, delay: 0.5 }}
           >
             <a
               href="#"
@@ -177,9 +185,9 @@ function Navbar() {
             </a>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.8, y: -20 }}
-            animate={{ scale: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1.3, delay: 0.5 }}
           >
             <a
               href="#"
@@ -190,7 +198,7 @@ function Navbar() {
               Team
             </a>
           </motion.li>
-        </div>
+        </motion.div>
       </header>
     </div>
   );
