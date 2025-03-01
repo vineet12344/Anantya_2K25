@@ -138,7 +138,7 @@ export default function TeamGrid() {
           backgroundImage: `url(${bg})`,
         }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mb-15">
+        <div className="grid place-items-center grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mb-15">
           {teamMembers.map((member, index) => (
             <TeamCard key={index} {...member} />
           ))}
