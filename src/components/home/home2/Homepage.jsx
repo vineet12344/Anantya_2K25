@@ -45,7 +45,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4 ">
+              <h1 className="text-6xl md:text-6xl font-bold tracking-tighter mb-4 ">
                 Anantya{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-800">
                   2025

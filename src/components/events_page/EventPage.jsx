@@ -43,7 +43,7 @@ const CollegeEvents = () => {
       description:
         "Code through the chaos of parallel realities where logic warps, syntax shifts, and only your intuition can restore order!",
       date: "",
-      imgUrl: "/poster/BlindCoding.png",
+      imgUrl: "/poster/BlindCoding.jpg",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink:
@@ -98,7 +98,7 @@ const CollegeEvents = () => {
       description:
         "Code your way through the multiverse-only the best survive the Coding Olympics!",
       date: "15th March",
-      imgUrl: "/poster/CodingOlympics.png",
+      imgUrl: "/poster/CodingOlympics.jpg",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink: "https://forms.gle/EBPyfywySgrdXE5Q6",
@@ -180,7 +180,7 @@ const CollegeEvents = () => {
       description:
         "Enter the arena of Multiversal champions! Beast Games is where strength, skill, and strategy collide to test the limits of competition.",
       date: "",
-      imgUrl: "/poster/BeastGames.png",
+      imgUrl: "/poster/BeastGames.jpg",
       videoUrl1: "/poster/video1.mp4",
       videoUrl2: "/poster/video2.mp4",
       registrationLink:
