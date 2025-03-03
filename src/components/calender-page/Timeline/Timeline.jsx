@@ -17,7 +17,7 @@ const CodingOlympics = "/poster/CodingOlympics.png";
 const BlindCoding = "/poster/BlindCoding.png";
 
 const rulebookCodigo =
-  "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=sharing";
+  "https://drive.google.com/file/d/1JtihVg2V4aqDOY_HpIHSsDlfI1ND83_v/view?usp=drive_link";
 const rulebookSheSolves =
   "https://drive.google.com/file/d/1zF4C4HjOS35V7GD9aXgAhrO610xe9MM-/view?usp=sharing";
 const rulebookBlindCoding =
