@@ -305,7 +305,7 @@ const events = [
     date: "08 MARCH 2025",
     time: "10:00 AM - 12:00 PM",
     rulebook:
-      "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=sharing",
+      "https://drive.google.com/file/d/1JtihVg2V4aqDOY_HpIHSsDlfI1ND83_v/view?usp=drive_link",
     top: "90.32%",
     progress: 0.9032,
   },
@@ -316,7 +316,7 @@ const events = [
     date: "08 MARCH 2025",
     time: "12:00 PM - 2:00 PM",
     rulebook:
-      "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=sharing",
+      "https://drive.google.com/file/d/1JtihVg2V4aqDOY_HpIHSsDlfI1ND83_v/view?usp=drive_link",
     top: "94.16%",
     progress: 0.9416,
   },
