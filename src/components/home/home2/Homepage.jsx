@@ -45,7 +45,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <div>
-              <h1 className="text-6xl md:text-6xl font-bold tracking-tighter mb-4 ">
+              <h1 className="text-7xl   md:text-9xl font-bold tracking-tighter mb-4 ">
                 Anantya{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-800">
                   2025
@@ -101,6 +101,91 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-16 md:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-red-900/20 to-black opacity-70"></div>
+          <img
+            src="https://images.unsplash.com/photo-1539321908154-04927596764d?q=80&w=1920&h=800"
+            alt="Cosmic background with red galaxy"
+            fill="true"
+            className="object-cover"
+          />
+        </div>
+
+        <div className=" relative z-10">
+          <motion.div
+            className="w-[100vw] mx-auto text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-3xl md:text-5xl font-bold">Our Sponsors</h2>
+            <p className="text-xl text-gray-300">
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div style={{background:"url('https://images.unsplash.com/photo-1539321908154-04927596764d?q=80&w=1920&h=800')"}}>
+                <h2 className="text glitch" data-text={""}>
+                  {/* {texts[i]} */}
+                </h2>
+                <main>
+                  <div
+                    className="slider"
+                    style={{
+                      "--width": "100px",
+                      "--height": "50px",
+                      "--quantity": "16",
+                    }}
+                  >
+                    <div className="list">
+                      {[...Array(16)].map((_, index) => (
+                        <div
+                          className={`item item+${index}`}
+                          style={{ "--position": index + 1 }}
+                          key={index}
+                        >
+                          {/* <img src={`./slide/slider1_${index + 1}.png`} alt="" /> */}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div
+                    className="slider"
+                    data-reverse="true"
+                    style={{
+                      "--width": "200px",
+                      "--height": "200px",
+                      "--quantity": "16",
+                    }}
+                  >
+                    <div className="list">
+                      {[...Array(16)].map((_, index) => (
+                        <div
+                          className="item"
+                          style={{ "--position": index + 1 }}
+                          key={index}
+                        >
+                          <img
+                            src={`/slide_sponsors/slider2_${index + 1}.png`}
+                            alt=""
+                            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </main>
+                <div className="head2">
+                  <h2 className="text glitch" data-text={""}>
+                    {/* {texts[i + 1]} */}
+                  </h2>
+                </div>
+              </div> 
+            </div>
+          </motion.div>
+        </div>
+      </section>
      
 
       <section className="py-16 bg-black">
@@ -227,7 +312,7 @@ export default function Home() {
                           key={index}
                         >
                           <img
-                            src={`/slide/slider2_${index + 1}.png`}
+                            src={`/slide_clubs/slider2_${index + 1}.png`}
                             alt=""
                           />
                         </div>

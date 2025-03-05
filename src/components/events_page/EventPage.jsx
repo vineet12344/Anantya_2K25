@@ -22,7 +22,7 @@ const CollegeEvents = () => {
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLSfFBtmyhz8NyTnzTXWudSyttHxFoy2PNBCE0yt2u3vyZND56A/viewform?usp=header",
       rulebookLink:
-        "https://drive.google.com/file/d/1-lnMXBjDCLr3dUPiPKc2nY5MFEnTXHrU/view?usp=sharing",
+        "https://drive.google.com/file/d/1JtihVg2V4aqDOY_HpIHSsDlfI1ND83_v/view?usp=drivesdk",
     },
     {
       id: 2,
